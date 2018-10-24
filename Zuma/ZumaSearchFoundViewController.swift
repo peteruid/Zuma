@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZumaSearchFoundViewController: UITableViewController {
+class ZumaSearchFoundViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class ZumaSearchFoundViewController: UITableViewController {
     }
     
     @IBAction func onDoneButton(_ sender: Any) {
-        performSegue(withIdentifier:"unwind.to room.view", sender: self)
+        performSegue(withIdentifier:"unwind.to.room.view", sender: self)
     }
     
     /*

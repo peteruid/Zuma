@@ -274,7 +274,7 @@
                                 <state key="normal" title="Let's do initial Setup"/>
                                 <connections>
                                     <action selector="SearchForZumas:" destination="80j-7g-EPe" eventType="touchUpInside" id="qxR-wY-us3"/>
-                                    <segue destination="OVO-p9-Zos" kind="showDetail" id="6nQ-IQ-a0Z"/>
+                                    <segue destination="K6M-Et-H8c" kind="show" id="yIv-CE-dFM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -288,110 +288,45 @@
             <point key="canvasLocation" x="1556" y="-352"/>
         </scene>
         <!--Zuma Search Found View Controller-->
-        <scene sceneID="KVm-d5-2jW">
+        <scene sceneID="SZB-x7-xda">
             <objects>
-                <tableViewController id="OVO-p9-Zos" customClass="ZumaSearchFoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zZG-G7-wMY">
+                <viewController id="K6M-Et-H8c" customClass="ZumaSearchFoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rYC-tY-Q2I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badge_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="8sS-dg-IGi">
+                                <rect key="frame" x="41" y="103" width="36" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Master V1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwB-fc-ClJ">
+                                <rect key="frame" x="85" y="109" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-83-z2J">
+                                <rect key="frame" x="169" y="552" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="SearchForZumas:" destination="80j-7g-EPe" eventType="touchUpInside" id="k9w-lM-pB8"/>
+                                    <action selector="onDoneButton:" destination="K6M-Et-H8c" eventType="touchUpInside" id="gQD-lq-5QR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="MKW-ZH-AM7">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Setup Zuma" id="kVw-Kc-iJq"/>
-                            </items>
-                        </navigationBar>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aOc-it-Gc6">
-                            <rect key="frame" x="0.0" y="204" width="375" height="444"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                            <state key="normal" title="Done"/>
-                            <connections>
-                                <action selector="onDoneButton:" destination="OVO-p9-Zos" eventType="touchUpInside" id="R0W-qV-Y9S"/>
-                            </connections>
-                        </button>
-                        <sections>
-                            <tableViewSection headerTitle="Unconfigured Zoomas" id="Fqh-ku-MPW" userLabel="Unconfigured Zumas">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QI3-bA-xcW">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QI3-bA-xcW" id="VMq-Vz-Qyl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badge_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="snW-nE-aOM">
-                                                    <rect key="frame" x="16" y="5" width="36" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Master V1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh9-yo-mqM">
-                                                    <rect key="frame" x="60" y="11" width="125" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eKw-kN-uV4">
-                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eKw-kN-uV4" id="nt4-ot-t7B">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Master V1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhM-4g-NSz">
-                                                    <rect key="frame" x="60" y="11" width="125" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badge_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="gvL-bZ-PmX">
-                                                    <rect key="frame" x="16" y="5" width="36" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xkI-IL-wd3">
-                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xkI-IL-wd3" id="vcd-Fn-LYT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badge_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="meL-2l-rub">
-                                                    <rect key="frame" x="16" y="5" width="36" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Master V1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtS-yH-50X">
-                                                    <rect key="frame" x="60" y="11" width="125" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="OVO-p9-Zos" id="z7k-qP-wTC"/>
-                            <outlet property="delegate" destination="OVO-p9-Zos" id="OgU-Xu-G0C"/>
-                        </connections>
-                    </tableView>
+                        <viewLayoutGuide key="safeArea" id="gII-Do-t52"/>
+                    </view>
                     <connections>
-                        <segue destination="8Pz-ZF-AW5" kind="unwind" identifier="unwind.to room.view" unwindAction="unwindToRoomViewWithSegue:" id="Lqj-Vj-aql"/>
+                        <segue destination="dNi-jo-7Zc" kind="unwind" identifier="unwind.to.room.view" unwindAction="unwindToRoomViewWithSegue:" id="KLd-Wr-Rwt"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="STW-Wp-0QT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="8Pz-ZF-AW5" userLabel="Exit" sceneMemberID="exit"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Cm-i9-zM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dNi-jo-7Zc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2509.5999999999999" y="-352.17391304347831"/>
+            <point key="canvasLocation" x="2348" y="-352"/>
         </scene>
         <!--Room Action View Controller-->
         <scene sceneID="j4M-VY-Hpa">
