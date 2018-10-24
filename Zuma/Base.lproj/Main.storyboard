@@ -414,7 +414,7 @@ Click here to simulate choosing one...</string>
         <!--Network Password-->
         <scene sceneID="ALq-rf-I9D">
             <objects>
-                <viewController title="Network Password" id="jcR-wN-Mf8" sceneMemberID="viewController">
+                <viewController title="Network Password" id="jcR-wN-Mf8" customClass="NetworkPasswordViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ue-7Y-QJm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -437,13 +437,20 @@ Click here to simulate choosing one...</string>
                                 <rect key="frame" x="312" y="338" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onNetworkPasswordSubmit:" destination="jcR-wN-Mf8" eventType="touchUpInside" id="sim-x5-Fyf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fDb-Ka-pK2"/>
                     </view>
+                    <connections>
+                        <segue destination="uNi-YO-Wpd" kind="unwind" identifier="unwind.to.zuma.search.found.view" unwindAction="unwindToZumaSearchFoundViewWithSegue:" id="1dn-lH-gE7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7p-MD-BQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uNi-YO-Wpd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3741.5999999999999" y="-352.46305418719214"/>
         </scene>

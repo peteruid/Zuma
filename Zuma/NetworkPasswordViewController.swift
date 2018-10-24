@@ -1,5 +1,5 @@
 //
-//  ZumaSearchFoundViewController.swift
+//  NetworkPasswordViewController.swift
 //  Zuma
 //
 //  Created by Peter Nelson on 10/23/18.
@@ -8,23 +8,18 @@
 
 import UIKit
 
-class ZumaSearchFoundViewController: UIViewController {
+class NetworkPasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Hide the back button
-        let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
-        navigationItem.leftBarButtonItem = backButton
+        // Do any additional setup after loading the view.
     }
     
-    @IBAction func onDoneButton(_ sender: Any) {
-        performSegue(withIdentifier:"unwind.to.room.view", sender: self)
+
+    @IBAction func onNetworkPasswordSubmit(_ sender: Any) {
+        performSegue(withIdentifier:"unwind.to.zuma.search.found.view", sender: self)
     }
-    
-    @IBAction func unwindToZumaSearchFoundView(segue: UIStoryboardSegue) {
-    }
-    
     /*
     // MARK: - Navigation
 

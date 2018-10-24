@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */; };
 		D08AB0A921803180009261FC /* NetworkSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08AB0A821803180009261FC /* NetworkSelectionViewController.swift */; };
 		D0BE3FBF217FB6EB004FDB45 /* RoomActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE3FBE217FB6EB004FDB45 /* RoomActionViewController.swift */; };
 		D0BE3FC1217FB9B7004FDB45 /* RoomDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE3FC0217FB9B7004FDB45 /* RoomDetailViewController.swift */; };
@@ -157,6 +158,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPasswordViewController.swift; sourceTree = "<group>"; };
 		D08AB0A821803180009261FC /* NetworkSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSelectionViewController.swift; sourceTree = "<group>"; };
 		D0BE3FBE217FB6EB004FDB45 /* RoomActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomActionViewController.swift; sourceTree = "<group>"; };
 		D0BE3FC0217FB9B7004FDB45 /* RoomDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailViewController.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 				D0BE3FC2217FE023004FDB45 /* ZumaSearchViewController.swift */,
 				D0BE3FC4217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift */,
 				D08AB0A821803180009261FC /* NetworkSelectionViewController.swift */,
+				D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */,
 				D0C09DC8217F9C7A00393BEE /* Assets.xcassets */,
 				D0C09DCD217F9C7A00393BEE /* Info.plist */,
 				D0C09DCA217F9C7A00393BEE /* LaunchScreen.storyboard */,
@@ -753,6 +756,7 @@
 			files = (
 				D0BE3FC1217FB9B7004FDB45 /* RoomDetailViewController.swift in Sources */,
 				D0BE3FC3217FE023004FDB45 /* ZumaSearchViewController.swift in Sources */,
+				D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */,
 				D0BE3FBF217FB6EB004FDB45 /* RoomActionViewController.swift in Sources */,
 				D0C09DC4217F9C7A00393BEE /* RoomViewController.swift in Sources */,
 				D08AB0A921803180009261FC /* NetworkSelectionViewController.swift in Sources */,
