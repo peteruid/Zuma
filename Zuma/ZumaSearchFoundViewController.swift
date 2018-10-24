@@ -13,7 +13,9 @@ class ZumaSearchFoundViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Hide the back button
+        let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
+        navigationItem.leftBarButtonItem = backButton
     }
     
     @IBAction func onDoneButton(_ sender: Any) {
