@@ -17,9 +17,7 @@ class NetworkPasswordViewController: UIViewController {
     }
     
 
-    @IBAction func onNetworkPasswordSubmit(_ sender: Any) {
-        performSegue(withIdentifier:"unwind.to.zuma.search.found.view", sender: self)
-    }
+    
     /*
     // MARK: - Navigation
 

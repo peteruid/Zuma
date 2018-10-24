@@ -16,13 +16,29 @@ class ZumaSearchFoundViewController: UIViewController {
         // Hide the back button
         let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
         navigationItem.leftBarButtonItem = backButton
+        
+        
+//        let myButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+//        let action = #selector(ZumaSearchFoundViewController.tappedButton)     // target function must have @obj heading or @IBAction heading
+//        myButton.addTarget(self, action: action, for: .touchUpInside)
     }
+    
+//    @objc func tappedButton(_ sender: UIButton?) {
+//        print("tapped button")
+//    }
+    
+    
+    
     
     @IBAction func onDoneButton(_ sender: Any) {
         performSegue(withIdentifier:"unwind.to.room.view", sender: self)
     }
     
     @IBAction func unwindToZumaSearchFoundView(segue: UIStoryboardSegue) {
+    }
+    
+    @IBAction func onZumaMasterClicked(_ sender: Any) {
+        performSegue(withIdentifier:"Choose Zuma Space", sender: self)
     }
     
     /*
@@ -34,5 +50,11 @@ class ZumaSearchFoundViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+
+
+    
+
 
 }

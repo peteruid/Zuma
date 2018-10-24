@@ -322,6 +322,9 @@
                                 <state key="normal" title="Zuma Master Ver 1.0" image="badge_blue.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onZumaMasterClicked:" destination="K6M-Et-H8c" eventType="touchUpInside" id="eWf-F4-NFx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZz-J9-HG6">
                                 <rect key="frame" x="18" y="152" width="231" height="34"/>
@@ -330,6 +333,9 @@
                                 <state key="normal" title="Zuma Master Ver 1.0" image="badge_blue.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onZumaMasterClicked:" destination="K6M-Et-H8c" eventType="touchUpInside" id="Abr-Si-w3r"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="~5 ft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6D-1O-sBg">
                                 <rect key="frame" x="284" y="48" width="39" height="22"/>
@@ -366,6 +372,9 @@
                                 <state key="normal" title="Zuma Master Ver 1.0" image="badge_blue.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onZumaMasterClicked:" destination="K6M-Et-H8c" eventType="touchUpInside" id="E12-Yz-4yP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -374,12 +383,13 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <segue destination="dNi-jo-7Zc" kind="unwind" identifier="unwind.to.room.view" unwindAction="unwindToRoomViewWithSegue:" id="KLd-Wr-Rwt"/>
+                        <segue destination="GXa-jX-bMg" kind="show" identifier="Choose Zuma Space" id="uQx-Lo-CXr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cm-i9-zM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dNi-jo-7Zc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2348" y="-352.17391304347831"/>
+            <point key="canvasLocation" x="2290" y="-352"/>
         </scene>
         <!--Choose a Network-->
         <scene sceneID="BMY-0T-G7L">
@@ -409,7 +419,7 @@ Click here to simulate choosing one...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfI-hr-TtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3076" y="-351.72413793103448"/>
+            <point key="canvasLocation" x="3074" y="-845"/>
         </scene>
         <!--Network Password-->
         <scene sceneID="ALq-rf-I9D">
@@ -438,21 +448,72 @@ Click here to simulate choosing one...</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <action selector="onNetworkPasswordSubmit:" destination="jcR-wN-Mf8" eventType="touchUpInside" id="sim-x5-Fyf"/>
+                                    <segue destination="GXa-jX-bMg" kind="show" id="Y3e-ao-Je9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fDb-Ka-pK2"/>
                     </view>
-                    <connections>
-                        <segue destination="uNi-YO-Wpd" kind="unwind" identifier="unwind.to.zuma.search.found.view" unwindAction="unwindToZumaSearchFoundViewWithSegue:" id="1dn-lH-gE7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7p-MD-BQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="uNi-YO-Wpd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3741.5999999999999" y="-352.46305418719214"/>
+            <point key="canvasLocation" x="3783" y="-845"/>
+        </scene>
+        <!--Space Name-->
+        <scene sceneID="Ev7-fr-hA9">
+            <objects>
+                <viewController title="Space Name" id="GXa-jX-bMg" customClass="SpaceNamePickerViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ru-3Y-Yr8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="5gK-kl-fei">
+                                <rect key="frame" x="0.0" y="230" width="375" height="482"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SpaceNameCell" id="fLA-VH-lDD">
+                                        <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fLA-VH-lDD" id="OMO-uE-zyX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="GXa-jX-bMg" id="Rdv-74-KmW"/>
+                                    <outlet property="delegate" destination="GXa-jX-bMg" id="Jbn-Od-AGS"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please choose a space for this master Zooma from the list below." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgD-op-rR8">
+                                <rect key="frame" x="45" y="114" width="284" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSI-rS-Jks">
+                                <rect key="frame" x="163" y="732" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onNetworkPasswordSubmit:" destination="GXa-jX-bMg" eventType="touchUpInside" id="NXI-Ms-hyP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vXn-f8-mii"/>
+                    </view>
+                    <connections>
+                        <segue destination="hG3-dT-ezr" kind="unwind" identifier="unwind.to.zuma.search.found.view" unwindAction="unwindToZumaSearchFoundViewWithSegue:" id="LKg-x0-3zw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyP-47-dti" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hG3-dT-ezr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4561" y="-347"/>
         </scene>
         <!--Room Action View Controller-->
         <scene sceneID="j4M-VY-Hpa">
@@ -492,4 +553,7 @@ Click here to simulate choosing one...</string>
         <image name="bubble.png" width="32" height="25"/>
         <image name="settings.png" width="21" height="18"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uQx-Lo-CXr"/>
+    </inferredMetricsTieBreakers>
 </document>
