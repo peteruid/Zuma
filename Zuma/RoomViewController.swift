@@ -27,7 +27,6 @@ class RoomViewController: UIViewController {
         for n in 1...8 {
             let roomButton : UIView = self.view.viewWithTag(n)! as UIView
             
-            
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(normalTap(_:)))
             tapGesture.numberOfTapsRequired = 1
             
@@ -37,11 +36,11 @@ class RoomViewController: UIViewController {
             roomButton.addGestureRecognizer(longGesture)
         }
         
-        
         // For first launch - let's pop up a 'no devices found' screen and take users through the flow to add them
         self.performSegue(withIdentifier:"No Devices", sender: self)
     }
 
+    
     @IBAction func RoomButtonClicked(_ sender: Any, forEvent event: UIEvent) {
         self.performSegue(withIdentifier:"Room Clicked", sender: sender)
     }
@@ -56,7 +55,7 @@ class RoomViewController: UIViewController {
     }
     
     @IBAction func unwindToRoomView(segue: UIStoryboardSegue) {
-        print("segue with ID: %@", segue.identifier)
+        //print("segue with ID: %@", segue.identifier!)
     }
     
     
