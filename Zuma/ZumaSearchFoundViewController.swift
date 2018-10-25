@@ -37,8 +37,13 @@ class ZumaSearchFoundViewController: UIViewController {
     @IBAction func unwindToZumaSearchFoundView(segue: UIStoryboardSegue) {
     }
     
-    @IBAction func onZumaMasterClicked(_ sender: Any) {
-        performSegue(withIdentifier:"Choose Zuma Space", sender: self)
+    
+    @IBAction func onZumaButtonClicked(_ sender: UIButton) {
+        if (sender.tag == 1) {
+            performSegue(withIdentifier:"Choose Zuma Space", sender: self)
+            return;
+        }
+        performSegue(withIdentifier:"Name Zuma Space", sender: self)
     }
     
     /*

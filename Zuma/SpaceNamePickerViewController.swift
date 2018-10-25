@@ -10,15 +10,18 @@ import UIKit
 
 class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
 
-    let sections = ["Fruit", "Vegetables"]
-    let fruit = ["Apple", "Orange", "Mango"]
-    let vegetables = ["Carrot", "Broccoli", "Cucumber"]
+    let sections = ["Existing", "New"]
+    let existing = ["Master Bedroom", "Living Room", "Cora's Room", "Lucas' Room", "Garage", "Kitchen", "Bathroom"]
+    let suggestions = ["Patio", "Den", "Bat Cave"]
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sections[section]
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        if (self.title == "Choose a Space") {
+            return 1;
+        }
         return sections.count
     }
     
@@ -26,10 +29,10 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         switch section {
         case 0:
             // Fruit Section
-            return fruit.count
+            return existing.count
         case 1:
             // Vegetable Section
-            return vegetables.count
+            return suggestions.count
         default:
             return 0
         }
@@ -46,11 +49,11 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         switch indexPath.section {
         case 0:
             // Fruit Section
-            cell.textLabel?.text = fruit[indexPath.row]
+            cell.textLabel?.text = existing[indexPath.row]
             break
         case 1:
             // Vegetable Section
-            cell.textLabel?.text = vegetables[indexPath.row]
+            cell.textLabel?.text = suggestions[indexPath.row]
             break
         default:
             break
