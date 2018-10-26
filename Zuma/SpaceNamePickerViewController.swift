@@ -11,7 +11,7 @@ import UIKit
 class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
 
     let sections = ["Existing", "New"]
-    let existing = ["Master Bedroom", "Living Room", "Cora's Room", "Lucas' Room", "Garage", "Kitchen", "Bathroom"]
+    let existing = ["Master Bedroom", "Living Room", "Cora's Room", "John's Room", "Garage", "Kitchen", "Bathroom"]
     let suggestions = ["Patio", "Den", "Bat Cave"]
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
