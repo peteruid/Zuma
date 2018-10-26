@@ -18,6 +18,8 @@ class DashboardPageViewController: UIPageViewController, UIPageViewControllerDat
         ]
     }()
     
+    var pageControl = UIPageControl()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,18 @@ class DashboardPageViewController: UIPageViewController, UIPageViewControllerDat
         self.dataSource = self
         self.delegate = self
         setViewControllers([subViewControllers[0]], direction: .forward, animated: true, completion: nil)
+        configurePageControl()
+    }
+    
+    func configurePageControl() {
+        pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 50,width: UIScreen.main.bounds.width,height: 50))
+        self.pageControl.numberOfPages = subViewControllers.count
+        self.pageControl.currentPage = 0
+        self.pageControl.alpha = 0.5
+        self.pageControl.tintColor = UIColor.black
+        self.pageControl.pageIndicatorTintColor = UIColor.lightGray
+        self.pageControl.currentPageIndicatorTintColor = UIColor.black
+        self.view.addSubview(pageControl)
     }
     
     
@@ -48,6 +62,15 @@ class DashboardPageViewController: UIPageViewController, UIPageViewControllerDat
             return nil;
         }
         return subViewControllers[currentIndex+1]
+    }
+    
+    
+
+
+    // MARK: Delegate functions
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = subViewControllers.index(of: pageContentViewController)!
     }
 
     /*
