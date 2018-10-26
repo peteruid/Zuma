@@ -10,16 +10,22 @@
 		D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */; };
 		D08847CA2180C630003D4E75 /* SpaceNamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */; };
 		D08847CC2183700F003D4E75 /* ZumaInstallationComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */; };
-		D08847CE21837ADD003D4E75 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847CD21837ADD003D4E75 /* DashboardViewController.swift */; };
+		D08847CE21837ADD003D4E75 /* DashboardHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847CD21837ADD003D4E75 /* DashboardHomeViewController.swift */; };
 		D08847D021837B11003D4E75 /* DashboardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847CF21837B11003D4E75 /* DashboardPageViewController.swift */; };
 		D08847D22183819B003D4E75 /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = D08847D12183819A003D4E75 /* dashboard.png */; };
+		D08847D42183D8AD003D4E75 /* DashboardSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847D32183D8AD003D4E75 /* DashboardSoundViewController.swift */; };
+		D08847D62183D8D4003D4E75 /* DashboardLightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847D52183D8D4003D4E75 /* DashboardLightsViewController.swift */; };
+		D08847D82183D8F9003D4E75 /* DashboardSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847D72183D8F9003D4E75 /* DashboardSecurityViewController.swift */; };
+		D08847DC2183DA90003D4E75 /* dashboardLights.png in Resources */ = {isa = PBXBuildFile; fileRef = D08847D92183DA8F003D4E75 /* dashboardLights.png */; };
+		D08847DD2183DA90003D4E75 /* dashboardSound.png in Resources */ = {isa = PBXBuildFile; fileRef = D08847DA2183DA8F003D4E75 /* dashboardSound.png */; };
+		D08847DE2183DA90003D4E75 /* dashboardSecurity.png in Resources */ = {isa = PBXBuildFile; fileRef = D08847DB2183DA90003D4E75 /* dashboardSecurity.png */; };
 		D08AB0A921803180009261FC /* NetworkSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08AB0A821803180009261FC /* NetworkSelectionViewController.swift */; };
 		D0BE3FBF217FB6EB004FDB45 /* RoomActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE3FBE217FB6EB004FDB45 /* RoomActionViewController.swift */; };
 		D0BE3FC1217FB9B7004FDB45 /* RoomDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE3FC0217FB9B7004FDB45 /* RoomDetailViewController.swift */; };
 		D0BE3FC3217FE023004FDB45 /* ZumaSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE3FC2217FE023004FDB45 /* ZumaSearchViewController.swift */; };
 		D0BE3FC5217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE3FC4217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift */; };
 		D0C09DC2217F9C7A00393BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C09DC1217F9C7A00393BEE /* AppDelegate.swift */; };
-		D0C09DC4217F9C7A00393BEE /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C09DC3217F9C7A00393BEE /* RoomViewController.swift */; };
+		D0C09DC4217F9C7A00393BEE /* DashboardRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C09DC3217F9C7A00393BEE /* DashboardRoomsViewController.swift */; };
 		D0C09DC7217F9C7A00393BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C09DC5217F9C7A00393BEE /* Main.storyboard */; };
 		D0C09DC9217F9C7A00393BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C09DC8217F9C7A00393BEE /* Assets.xcassets */; };
 		D0C09DCC217F9C7A00393BEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C09DCA217F9C7A00393BEE /* LaunchScreen.storyboard */; };
@@ -166,9 +172,15 @@
 		D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPasswordViewController.swift; sourceTree = "<group>"; };
 		D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNamePickerViewController.swift; sourceTree = "<group>"; };
 		D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationComplete.swift; sourceTree = "<group>"; };
-		D08847CD21837ADD003D4E75 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		D08847CD21837ADD003D4E75 /* DashboardHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardHomeViewController.swift; sourceTree = "<group>"; };
 		D08847CF21837B11003D4E75 /* DashboardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPageViewController.swift; sourceTree = "<group>"; };
 		D08847D12183819A003D4E75 /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard.png; sourceTree = "<group>"; };
+		D08847D32183D8AD003D4E75 /* DashboardSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSoundViewController.swift; sourceTree = "<group>"; };
+		D08847D52183D8D4003D4E75 /* DashboardLightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardLightsViewController.swift; sourceTree = "<group>"; };
+		D08847D72183D8F9003D4E75 /* DashboardSecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSecurityViewController.swift; sourceTree = "<group>"; };
+		D08847D92183DA8F003D4E75 /* dashboardLights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboardLights.png; sourceTree = "<group>"; };
+		D08847DA2183DA8F003D4E75 /* dashboardSound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboardSound.png; sourceTree = "<group>"; };
+		D08847DB2183DA90003D4E75 /* dashboardSecurity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboardSecurity.png; sourceTree = "<group>"; };
 		D08AB0A821803180009261FC /* NetworkSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSelectionViewController.swift; sourceTree = "<group>"; };
 		D0BE3FBE217FB6EB004FDB45 /* RoomActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomActionViewController.swift; sourceTree = "<group>"; };
 		D0BE3FC0217FB9B7004FDB45 /* RoomDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailViewController.swift; sourceTree = "<group>"; };
@@ -176,7 +188,7 @@
 		D0BE3FC4217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaSearchFoundViewController.swift; sourceTree = "<group>"; };
 		D0C09DBE217F9C7A00393BEE /* Zuma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zuma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C09DC1217F9C7A00393BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0C09DC3217F9C7A00393BEE /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		D0C09DC3217F9C7A00393BEE /* DashboardRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRoomsViewController.swift; sourceTree = "<group>"; };
 		D0C09DC6217F9C7A00393BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0C09DC8217F9C7A00393BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0C09DCB217F9C7A00393BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -358,8 +370,11 @@
 			children = (
 				D0C09DC1217F9C7A00393BEE /* AppDelegate.swift */,
 				D08847CF21837B11003D4E75 /* DashboardPageViewController.swift */,
-				D08847CD21837ADD003D4E75 /* DashboardViewController.swift */,
-				D0C09DC3217F9C7A00393BEE /* RoomViewController.swift */,
+				D08847D32183D8AD003D4E75 /* DashboardSoundViewController.swift */,
+				D08847D72183D8F9003D4E75 /* DashboardSecurityViewController.swift */,
+				D08847D52183D8D4003D4E75 /* DashboardLightsViewController.swift */,
+				D08847CD21837ADD003D4E75 /* DashboardHomeViewController.swift */,
+				D0C09DC3217F9C7A00393BEE /* DashboardRoomsViewController.swift */,
 				D0BE3FC0217FB9B7004FDB45 /* RoomDetailViewController.swift */,
 				D0BE3FBE217FB6EB004FDB45 /* RoomActionViewController.swift */,
 				D0C09DC5217F9C7A00393BEE /* Main.storyboard */,
@@ -397,6 +412,9 @@
 		D0C09EDB217FA4FC00393BEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D08847D92183DA8F003D4E75 /* dashboardLights.png */,
+				D08847DB2183DA90003D4E75 /* dashboardSecurity.png */,
+				D08847DA2183DA8F003D4E75 /* dashboardSound.png */,
 				D08847D12183819A003D4E75 /* dashboard.png */,
 				D0C09E4E217FA4D700393BEE /* arrow_right_blue@2x.png */,
 				D0C09E61217FA4DB00393BEE /* arrow_right_white@2x.png */,
@@ -645,6 +663,7 @@
 				D0C09E8B217FA4DC00393BEE /* badge_success.png in Resources */,
 				D0C09E92217FA4DC00393BEE /* dot_lightgrey_ring.png in Resources */,
 				D0C09ECE217FA4DC00393BEE /* recevied.wav in Resources */,
+				D08847DC2183DA90003D4E75 /* dashboardLights.png in Resources */,
 				D0C09EAD217FA4DC00393BEE /* check_empty@2x.png in Resources */,
 				D0C09E7B217FA4DC00393BEE /* ball-star@2x.png in Resources */,
 				D0C09E8C217FA4DC00393BEE /* badge_plus@2x.png in Resources */,
@@ -679,6 +698,7 @@
 				D0C09E7A217FA4DC00393BEE /* btn_phone1.png in Resources */,
 				D0C09EAB217FA4DC00393BEE /* dot_empty.png in Resources */,
 				D0C09EA5217FA4DC00393BEE /* egg.png in Resources */,
+				D08847DE2183DA90003D4E75 /* dashboardSecurity.png in Resources */,
 				D0C09DCC217F9C7A00393BEE /* LaunchScreen.storyboard in Resources */,
 				D0C09E83217FA4DC00393BEE /* spinner2.gif in Resources */,
 				D0C09E8F217FA4DC00393BEE /* badge_blue.png in Resources */,
@@ -745,6 +765,7 @@
 				D0C09E84217FA4DC00393BEE /* tag@2x.png in Resources */,
 				D0C09E9E217FA4DC00393BEE /* check-grey@2x.png in Resources */,
 				D0C09ED8217FA4DC00393BEE /* delete_grey@2x.png in Resources */,
+				D08847DD2183DA90003D4E75 /* dashboardSound.png in Resources */,
 				D0C09EBC217FA4DC00393BEE /* borderCell1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -775,11 +796,14 @@
 				D0BE3FC3217FE023004FDB45 /* ZumaSearchViewController.swift in Sources */,
 				D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */,
 				D0BE3FBF217FB6EB004FDB45 /* RoomActionViewController.swift in Sources */,
-				D0C09DC4217F9C7A00393BEE /* RoomViewController.swift in Sources */,
+				D0C09DC4217F9C7A00393BEE /* DashboardRoomsViewController.swift in Sources */,
+				D08847D62183D8D4003D4E75 /* DashboardLightsViewController.swift in Sources */,
 				D08AB0A921803180009261FC /* NetworkSelectionViewController.swift in Sources */,
 				D0BE3FC5217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift in Sources */,
+				D08847D42183D8AD003D4E75 /* DashboardSoundViewController.swift in Sources */,
+				D08847D82183D8F9003D4E75 /* DashboardSecurityViewController.swift in Sources */,
 				D08847D021837B11003D4E75 /* DashboardPageViewController.swift in Sources */,
-				D08847CE21837ADD003D4E75 /* DashboardViewController.swift in Sources */,
+				D08847CE21837ADD003D4E75 /* DashboardHomeViewController.swift in Sources */,
 				D08847CA2180C630003D4E75 /* SpaceNamePickerViewController.swift in Sources */,
 				D0C09DC2217F9C7A00393BEE /* AppDelegate.swift in Sources */,
 			);

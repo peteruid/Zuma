@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoomViewController: UIViewController {
+class DashboardRoomsViewController: UIViewController {
     
 
     @IBOutlet weak var buttonPadCora: UIView!

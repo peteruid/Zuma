@@ -1,5 +1,5 @@
 //
-//  DashboardViewController.swift
+//  DashboardSoundViewController.swift
 //  Zuma
 //
 //  Created by Peter Nelson on 10/26/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardSoundViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

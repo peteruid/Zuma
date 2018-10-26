@@ -12,7 +12,7 @@
         <!--Your Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="RoomViewController" autoresizesArchivedViewToFullSize="NO" title="Your Home" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="RoomViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardRoomsViewController" autoresizesArchivedViewToFullSize="NO" title="Your Home" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="DashboardRoomsViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,8 +183,8 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <edgeInsets key="layoutMargins" top="20" left="8" bottom="8" right="8"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHp-7f-39s">
-                                <rect key="frame" x="44" y="109" width="115" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHp-7f-39s">
+                                <rect key="frame" x="44" y="109" width="144" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -196,11 +196,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="FnL-GH-AUz">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="settings.png" id="UU7-vf-RMx">
-                            <connections>
-                                <segue destination="GBR-2O-dHC" kind="show" id="9B3-8b-fvT"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="settings.png" id="UU7-vf-RMx"/>
                     </navigationItem>
                     <connections>
                         <outlet property="buttonPadBathroom" destination="gJt-aJ-14z" id="Cla-Wo-7Bj"/>
@@ -251,7 +247,7 @@
             <objects>
                 <viewController title="Settings" id="GBR-2O-dHC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yEW-dZ-551">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MS-dS-93h">
@@ -336,7 +332,7 @@
             <objects>
                 <viewController title="Add a Feature" id="NmR-Gt-vXw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vli-L0-ezE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05f-qu-fc5">
@@ -434,7 +430,13 @@
         <scene sceneID="G3U-1g-qW3">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="VrX-8R-efA" customClass="DashboardPageViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Wg2-t6-PmG"/>
+                    <navigationItem key="navigationItem" id="Wg2-t6-PmG">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings.png" style="plain" id="Wqm-y8-21G">
+                            <connections>
+                                <segue destination="GBR-2O-dHC" kind="show" id="xCb-Sm-8XT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r41-ke-2nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -458,16 +460,103 @@
             </objects>
             <point key="canvasLocation" x="-887" y="27"/>
         </scene>
+        <!--Your Security Dashboard-->
+        <scene sceneID="lvT-v9-B3d">
+            <objects>
+                <viewController storyboardIdentifier="DashboardSecurityViewController" title="Your Security Dashboard" id="15G-FD-kru" customClass="DashboardSecurityViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4fl-Qe-jK8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXj-eC-RJV">
+                                <rect key="frame" x="44" y="109" width="157" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dashboardSecurity.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xmz-nV-iRS">
+                                <rect key="frame" x="16" y="147" width="343" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SaL-ph-RQx"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVA-z0-INs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1390" y="-638"/>
+        </scene>
+        <!--Your Lighting Dashboard-->
+        <scene sceneID="MJi-gm-QUE">
+            <objects>
+                <viewController storyboardIdentifier="DashboardLightsViewController" title="Your Lighting Dashboard" id="7Hr-p8-AFH" customClass="DashboardLightsViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFn-UZ-vE1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Lights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3l-ah-2g8">
+                                <rect key="frame" x="44" y="109" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dashboardLights.png" translatesAutoresizingMaskIntoConstraints="NO" id="7kg-Gw-n1t">
+                                <rect key="frame" x="16" y="147" width="343" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7zW-N0-rTy"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T4Q-r9-2Tz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="-638"/>
+        </scene>
+        <!--Your Sound Dashboard-->
+        <scene sceneID="39X-Dw-69s">
+            <objects>
+                <viewController storyboardIdentifier="DashboardSoundViewController" title="Your Sound Dashboard" id="FX5-pF-wcq" customClass="DashboardSoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l2d-hZ-eCo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYN-RH-29J">
+                                <rect key="frame" x="44" y="109" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dashboardSound.png" translatesAutoresizingMaskIntoConstraints="NO" id="nXY-0Z-OrE">
+                                <rect key="frame" x="16" y="147" width="343" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wvj-U0-ttx"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zHI-NV-OSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="-638"/>
+        </scene>
         <!--Your Home Dashboard-->
         <scene sceneID="MuS-7K-SaX">
             <objects>
-                <viewController storyboardIdentifier="DashboardViewController" title="Your Home Dashboard" id="8gI-4u-wKi" customClass="DashboardViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardHomeViewController" title="Your Home Dashboard" id="8gI-4u-wKi" customClass="DashboardHomeViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxV-Cj-MiT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quq-wo-EaW">
-                                <rect key="frame" x="44" y="109" width="105" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quq-wo-EaW">
+                                <rect key="frame" x="44" y="109" width="134" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -1045,6 +1134,9 @@ Click here to simulate choosing one...</string>
         <image name="bubble.png" width="32" height="25"/>
         <image name="check-green.png" width="21" height="19"/>
         <image name="dashboard.png" width="687" height="1269"/>
+        <image name="dashboardLights.png" width="689" height="1294"/>
+        <image name="dashboardSecurity.png" width="691" height="1307"/>
+        <image name="dashboardSound.png" width="687" height="1288"/>
         <image name="settings.png" width="21" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>

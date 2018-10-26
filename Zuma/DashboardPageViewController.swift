@@ -12,9 +12,11 @@ class DashboardPageViewController: UIPageViewController, UIPageViewControllerDat
 
     lazy var subViewControllers:[UIViewController] = {
         return [
-            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RoomViewController") as! RoomViewController,
-            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
-        
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DashboardRoomsViewController") as! DashboardRoomsViewController,
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DashboardHomeViewController") as! DashboardHomeViewController,
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DashboardLightsViewController") as! DashboardLightsViewController,
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DashboardSoundViewController") as! DashboardSoundViewController,
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DashboardSecurityViewController") as! DashboardSecurityViewController
         ]
     }()
     
