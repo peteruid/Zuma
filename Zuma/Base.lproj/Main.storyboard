@@ -12,9 +12,9 @@
         <!--Your Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" title="Your Home" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="RoomViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoomViewController" autoresizesArchivedViewToFullSize="NO" title="Your Home" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="RoomViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view tag="8" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdq-xE-36p">
@@ -244,7 +244,7 @@
             <objects>
                 <viewController title="Settings" id="GBR-2O-dHC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yEW-dZ-551">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zuma Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MS-dS-93h">
@@ -329,7 +329,7 @@
             <objects>
                 <viewController title="Add a Feature" id="NmR-Gt-vXw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vli-L0-ezE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05f-qu-fc5">
@@ -423,6 +423,16 @@
             </objects>
             <point key="canvasLocation" x="2690" y="507"/>
         </scene>
+        <!--Dashboard Page View Controller-->
+        <scene sceneID="G3U-1g-qW3">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="VrX-8R-efA" customClass="DashboardPageViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Wg2-t6-PmG"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r41-ke-2nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="27"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Og-AK-Lb8">
             <objects>
@@ -434,12 +444,27 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0lN-ba-Xko"/>
+                        <segue destination="VrX-8R-efA" kind="relationship" relationship="rootViewController" id="e2V-Iv-g01"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35K-Lk-kh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="27"/>
+            <point key="canvasLocation" x="-887" y="27"/>
+        </scene>
+        <!--Your Home Dashboard-->
+        <scene sceneID="MuS-7K-SaX">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" title="Your Home Dashboard" id="8gI-4u-wKi" customClass="DashboardViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxV-Cj-MiT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uiN-U8-W62"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dud-vC-QxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="-637"/>
         </scene>
         <!--No Zuma's Found-->
         <scene sceneID="JcC-iH-tkG">
@@ -488,7 +513,7 @@
             <objects>
                 <viewController title="Select a Zuma to configure" id="K6M-Et-H8c" customClass="ZumaSearchFoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rYC-tY-Q2I">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-83-z2J">
