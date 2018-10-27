@@ -313,9 +313,17 @@
                                 <state key="normal" title="Manage Scenes"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sts-cE-Gvw">
-                                <rect key="frame" x="25" y="533" width="61" height="30"/>
+                                <rect key="frame" x="25" y="579" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get Help"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-tn-jje">
+                                <rect key="frame" x="25" y="513" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add More Zumas"/>
+                                <connections>
+                                    <segue destination="K6M-Et-H8c" kind="show" id="yCR-oN-oaq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -325,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oe-dA-UEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910" y="507"/>
+            <point key="canvasLocation" x="1894" y="507"/>
         </scene>
         <!--Add a Feature-->
         <scene sceneID="Wwd-yM-QaH">
@@ -377,42 +385,42 @@
                                 <state key="normal" title="Pandora"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jf-s5-Kox">
-                                <rect key="frame" x="16" y="307" width="32" height="30"/>
+                                <rect key="frame" x="25" y="306" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Nest"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EF0-9k-PKa">
-                                <rect key="frame" x="16" y="341" width="97" height="30"/>
+                                <rect key="frame" x="25" y="340" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Amazon Alexa"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYX-aT-QGp">
-                                <rect key="frame" x="16" y="383" width="44" height="30"/>
+                                <rect key="frame" x="25" y="382" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Wemo"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gio-J3-uxn">
-                                <rect key="frame" x="16" y="421" width="77" height="30"/>
+                                <rect key="frame" x="25" y="420" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Philips Hue"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LE-WU-rJS">
-                                <rect key="frame" x="16" y="526" width="103" height="30"/>
+                                <rect key="frame" x="25" y="525" width="103" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Fire Monitoring"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pii-zU-mVG">
-                                <rect key="frame" x="16" y="564" width="155" height="30"/>
+                                <rect key="frame" x="25" y="563" width="155" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Emergency Monitoring"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phZ-Qb-fkS">
-                                <rect key="frame" x="16" y="602" width="131" height="30"/>
+                                <rect key="frame" x="25" y="601" width="131" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Chat based control"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMu-i5-Vh9">
-                                <rect key="frame" x="16" y="640" width="190" height="30"/>
+                                <rect key="frame" x="25" y="639" width="190" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Simulated home occupancy"/>
                             </button>
@@ -431,7 +439,7 @@
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="VrX-8R-efA" customClass="DashboardPageViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Wg2-t6-PmG">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings.png" style="plain" id="Wqm-y8-21G">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings.png" id="Wqm-y8-21G">
                             <connections>
                                 <segue destination="GBR-2O-dHC" kind="show" id="xCb-Sm-8XT"/>
                             </connections>
@@ -616,14 +624,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukx-V7-bRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="80j-7g-EPe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1556" y="-352.46305418719214"/>
+            <point key="canvasLocation" x="1556" y="-352"/>
         </scene>
         <!--Select a Zuma to configure-->
         <scene sceneID="SZB-x7-xda">
             <objects>
                 <viewController title="Select a Zuma to configure" id="K6M-Et-H8c" customClass="ZumaSearchFoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rYC-tY-Q2I">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-83-z2J">
@@ -754,7 +762,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cm-i9-zM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300" y="-352"/>
+            <point key="canvasLocation" x="2735" y="-316"/>
         </scene>
         <!--Installation Complete-->
         <scene sceneID="vKU-Av-ms9">
@@ -794,7 +802,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuD-yP-Wt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="N1p-pu-zBs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3086" y="-176"/>
+            <point key="canvasLocation" x="3521" y="-140"/>
         </scene>
         <!--Physical Installation Guide-->
         <scene sceneID="ToM-yb-fHA">
@@ -804,9 +812,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wLW-V9-jbT">
-                                <rect key="frame" x="32" y="162" width="310" height="354"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wLW-V9-jbT">
+                                <rect key="frame" x="32" y="162" width="311" height="354"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
                                 <state key="normal">
                                     <string key="title">There needs to either be a workflow built here covering step-by-step installation, or an embedded web viewer.
@@ -822,6 +829,12 @@ But for now, clicking on this text will take us to the end of that workflow and 
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ThH-B7-cu6" firstAttribute="bottom" secondItem="wLW-V9-jbT" secondAttribute="bottom" constant="262" id="5Ac-Bh-XHI"/>
+                            <constraint firstItem="wLW-V9-jbT" firstAttribute="leading" secondItem="ThH-B7-cu6" secondAttribute="leading" constant="32" id="IRW-tl-i54"/>
+                            <constraint firstItem="wLW-V9-jbT" firstAttribute="top" secondItem="ThH-B7-cu6" secondAttribute="top" constant="118" id="Ixp-k2-Xkc"/>
+                            <constraint firstItem="wLW-V9-jbT" firstAttribute="centerX" secondItem="FDE-Hw-r9O" secondAttribute="centerX" id="Qff-bO-dKl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ThH-B7-cu6"/>
                     </view>
                 </viewController>
@@ -949,7 +962,7 @@ Click here to simulate choosing one...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfI-hr-TtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3074" y="-845"/>
+            <point key="canvasLocation" x="3508" y="-809"/>
         </scene>
         <!--Network Password-->
         <scene sceneID="ALq-rf-I9D">
@@ -988,7 +1001,7 @@ Click here to simulate choosing one...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7p-MD-BQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3783" y="-845"/>
+            <point key="canvasLocation" x="4217" y="-809"/>
         </scene>
         <!--Name this Space-->
         <scene sceneID="Ev7-fr-hA9">
@@ -1043,7 +1056,7 @@ Click here to simulate choosing one...</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyP-47-dti" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hG3-dT-ezr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4565.6000000000004" y="-352.46305418719214"/>
+            <point key="canvasLocation" x="5001" y="-316"/>
         </scene>
         <!--Choose a Space-->
         <scene sceneID="WlH-QV-aVg">
@@ -1084,6 +1097,7 @@ Click here to simulate choosing one...</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
+                                    <action selector="onNetworkPasswordSubmit:" destination="brg-V8-Bal" eventType="touchUpInside" id="4Xh-CU-ILl"/>
                                     <action selector="onNetworkPasswordSubmit:" destination="GXa-jX-bMg" eventType="touchUpInside" id="ZBc-aj-dnz"/>
                                 </connections>
                             </button>
@@ -1091,10 +1105,14 @@ Click here to simulate choosing one...</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="m7Z-j6-JFS"/>
                     </view>
+                    <connections>
+                        <segue destination="8ei-dU-XMI" kind="unwind" identifier="unwind.to.zuma.search.found.view" unwindAction="unwindToZumaSearchFoundViewWithSegue:" id="kb5-rg-87V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ylD-Gv-Y4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8ei-dU-XMI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5204" y="-352.46305418719214"/>
+            <point key="canvasLocation" x="5639" y="-316"/>
         </scene>
         <!--Room Action View Controller-->
         <scene sceneID="j4M-VY-Hpa">
@@ -1140,7 +1158,7 @@ Click here to simulate choosing one...</string>
         <image name="settings.png" width="21" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uQx-Lo-CXr"/>
-        <segue reference="hgN-Gg-W7O"/>
+        <segue reference="Y3e-ao-Je9"/>
+        <segue reference="yCR-oN-oaq"/>
     </inferredMetricsTieBreakers>
 </document>
