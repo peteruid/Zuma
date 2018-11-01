@@ -216,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="-352"/>
+            <point key="canvasLocation" x="214" y="-316"/>
         </scene>
         <!--Room Details-->
         <scene sceneID="DR3-11-Jkb">
@@ -240,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUW-XO-cXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-783" y="485"/>
+            <point key="canvasLocation" x="-954" y="-282"/>
         </scene>
         <!--Menu-->
         <scene sceneID="BBI-7x-VV5">
@@ -436,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Slg-QP-WKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1766" y="485"/>
+            <point key="canvasLocation" x="1041" y="485"/>
         </scene>
         <!--People-->
         <scene sceneID="TAe-bt-CiR">
@@ -467,7 +467,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r41-ke-2nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-634" y="-352"/>
+            <point key="canvasLocation" x="-954" y="485"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Og-AK-Lb8">
@@ -485,7 +485,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35K-Lk-kh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1442" y="-352"/>
+            <point key="canvasLocation" x="-1655" y="485"/>
         </scene>
         <!--Your Security Dashboard-->
         <scene sceneID="lvT-v9-B3d">
@@ -643,7 +643,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukx-V7-bRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="80j-7g-EPe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1766" y="-352"/>
+            <point key="canvasLocation" x="1969" y="1293"/>
         </scene>
         <!--Select a Zuma to configure-->
         <scene sceneID="SZB-x7-xda">
@@ -781,7 +781,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cm-i9-zM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2735" y="-316"/>
+            <point key="canvasLocation" x="3119" y="1308"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1ZD-Gg-L2l">
@@ -813,7 +813,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0O9-i9-ETK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="-709"/>
+            <point key="canvasLocation" x="1969" y="-316"/>
         </scene>
         <!--Installation Complete-->
         <scene sceneID="vKU-Av-ms9">
@@ -853,7 +853,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuD-yP-Wt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="N1p-pu-zBs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3919" y="47"/>
+            <point key="canvasLocation" x="4303" y="1671"/>
         </scene>
         <!--Physical Installation Guide-->
         <scene sceneID="ToM-yb-fHA">
@@ -891,7 +891,7 @@ But for now, clicking on this text will take us to the end of that workflow and 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eG4-YF-683" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2734" y="-1504"/>
+            <point key="canvasLocation" x="3119" y="120"/>
         </scene>
         <!--Test the Installation-->
         <scene sceneID="3ll-xl-6DO">
@@ -950,7 +950,7 @@ Please ensure the power is turned on for every room, and the lightswitch is set 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIF-5k-Kzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3396" y="-1504"/>
+            <point key="canvasLocation" x="3782" y="120"/>
         </scene>
         <!--Installation Troubleshooting-->
         <scene sceneID="AU5-T7-VQT">
@@ -983,7 +983,7 @@ Etc.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHW-rj-9zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4052" y="-1504"/>
+            <point key="canvasLocation" x="4438" y="120"/>
         </scene>
         <!--Choose a Network-->
         <scene sceneID="BMY-0T-G7L">
@@ -1013,7 +1013,7 @@ Click here to simulate choosing one...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfI-hr-TtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3508" y="-809"/>
+            <point key="canvasLocation" x="3894" y="815"/>
         </scene>
         <!--Network Password-->
         <scene sceneID="ALq-rf-I9D">
@@ -1052,7 +1052,7 @@ Click here to simulate choosing one...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7p-MD-BQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4217" y="-809"/>
+            <point key="canvasLocation" x="4602" y="815"/>
         </scene>
         <!--Name this Space-->
         <scene sceneID="Ev7-fr-hA9">
@@ -1107,7 +1107,7 @@ Click here to simulate choosing one...</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyP-47-dti" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hG3-dT-ezr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5001" y="-316"/>
+            <point key="canvasLocation" x="5386" y="1308"/>
         </scene>
         <!--Choose a Space-->
         <scene sceneID="WlH-QV-aVg">
@@ -1163,7 +1163,7 @@ Click here to simulate choosing one...</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ylD-Gv-Y4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8ei-dU-XMI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5639" y="-316"/>
+            <point key="canvasLocation" x="6022" y="1308"/>
         </scene>
         <!--Room Action View Controller-->
         <scene sceneID="j4M-VY-Hpa">
@@ -1195,7 +1195,7 @@ Click here to simulate choosing one...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuA-dL-E71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1442" y="485"/>
+            <point key="canvasLocation" x="-1655" y="-282"/>
         </scene>
     </scenes>
     <resources>
@@ -1210,6 +1210,6 @@ Click here to simulate choosing one...</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Y3e-ao-Je9"/>
-        <segue reference="yIv-CE-dFM"/>
+        <segue reference="hgN-Gg-W7O"/>
     </inferredMetricsTieBreakers>
 </document>
