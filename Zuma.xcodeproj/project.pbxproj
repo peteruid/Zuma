@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0373E91218CE732004A5EEA /* ZumaServiceLauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373E90218CE732004A5EEA /* ZumaServiceLauncherViewController.swift */; };
+		D0373E95218CF271004A5EEA /* Amazon sign in.png in Resources */ = {isa = PBXBuildFile; fileRef = D0373E94218CF270004A5EEA /* Amazon sign in.png */; };
+		D0373E97218D14C7004A5EEA /* Spotify sign in.png in Resources */ = {isa = PBXBuildFile; fileRef = D0373E96218D14C6004A5EEA /* Spotify sign in.png */; };
+		D0373E99218D6503004A5EEA /* SettingsFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */; };
 		D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */; };
 		D08847CA2180C630003D4E75 /* SpaceNamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */; };
 		D08847CC2183700F003D4E75 /* ZumaInstallationComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */; };
@@ -169,6 +173,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0373E90218CE732004A5EEA /* ZumaServiceLauncherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaServiceLauncherViewController.swift; sourceTree = "<group>"; };
+		D0373E94218CF270004A5EEA /* Amazon sign in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Amazon sign in.png"; sourceTree = "<group>"; };
+		D0373E96218D14C6004A5EEA /* Spotify sign in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotify sign in.png"; sourceTree = "<group>"; };
+		D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFeaturesViewController.swift; sourceTree = "<group>"; };
 		D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPasswordViewController.swift; sourceTree = "<group>"; };
 		D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNamePickerViewController.swift; sourceTree = "<group>"; };
 		D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationComplete.swift; sourceTree = "<group>"; };
@@ -380,10 +388,12 @@
 				D0C09DC5217F9C7A00393BEE /* Main.storyboard */,
 				D0BE3FC2217FE023004FDB45 /* ZumaSearchViewController.swift */,
 				D0BE3FC4217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift */,
+				D0373E90218CE732004A5EEA /* ZumaServiceLauncherViewController.swift */,
 				D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */,
 				D08AB0A821803180009261FC /* NetworkSelectionViewController.swift */,
 				D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */,
 				D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */,
+				D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */,
 				D0C09DC8217F9C7A00393BEE /* Assets.xcassets */,
 				D0C09DCD217F9C7A00393BEE /* Info.plist */,
 				D0C09DCA217F9C7A00393BEE /* LaunchScreen.storyboard */,
@@ -412,6 +422,8 @@
 		D0C09EDB217FA4FC00393BEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0373E94218CF270004A5EEA /* Amazon sign in.png */,
+				D0373E96218D14C6004A5EEA /* Spotify sign in.png */,
 				D08847D92183DA8F003D4E75 /* dashboardLights.png */,
 				D08847DB2183DA90003D4E75 /* dashboardSecurity.png */,
 				D08847DA2183DA8F003D4E75 /* dashboardSound.png */,
@@ -685,6 +697,7 @@
 				D0C09E9C217FA4DC00393BEE /* refresh_dark.png in Resources */,
 				D0C09E76217FA4DC00393BEE /* ChatBubbleRightDark.png in Resources */,
 				D0C09E7D217FA4DC00393BEE /* refresh_light_pressed.png in Resources */,
+				D0373E95218CF271004A5EEA /* Amazon sign in.png in Resources */,
 				D0C09EA1217FA4DC00393BEE /* ChatBubbleLeftLight.png in Resources */,
 				D0C09ED0217FA4DC00393BEE /* BottomLeftArrow.png in Resources */,
 				D0C09E6D217FA4DC00393BEE /* btn_reload.png in Resources */,
@@ -692,6 +705,7 @@
 				D0C09ECB217FA4DC00393BEE /* badge_orange_check@2x.png in Resources */,
 				D0C09EAC217FA4DC00393BEE /* btn_chat.png in Resources */,
 				D0C09EA6217FA4DC00393BEE /* ball_green.png in Resources */,
+				D0373E97218D14C7004A5EEA /* Spotify sign in.png in Resources */,
 				D0C09E87217FA4DC00393BEE /* badge_green_check@2x.png in Resources */,
 				D0C09EC4217FA4DC00393BEE /* arrow_right_blue@2x.png in Resources */,
 				D0C09ED3217FA4DC00393BEE /* btn_write2@2x.png in Resources */,
@@ -792,10 +806,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BE3FC1217FB9B7004FDB45 /* RoomDetailViewController.swift in Sources */,
+				D0373E91218CE732004A5EEA /* ZumaServiceLauncherViewController.swift in Sources */,
 				D08847CC2183700F003D4E75 /* ZumaInstallationComplete.swift in Sources */,
 				D0BE3FC3217FE023004FDB45 /* ZumaSearchViewController.swift in Sources */,
 				D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */,
 				D0BE3FBF217FB6EB004FDB45 /* RoomActionViewController.swift in Sources */,
+				D0373E99218D6503004A5EEA /* SettingsFeaturesViewController.swift in Sources */,
 				D0C09DC4217F9C7A00393BEE /* DashboardRoomsViewController.swift in Sources */,
 				D08847D62183D8D4003D4E75 /* DashboardLightsViewController.swift in Sources */,
 				D08AB0A921803180009261FC /* NetworkSelectionViewController.swift in Sources */,
