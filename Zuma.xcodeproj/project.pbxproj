@@ -11,6 +11,8 @@
 		D0373E95218CF271004A5EEA /* Amazon sign in.png in Resources */ = {isa = PBXBuildFile; fileRef = D0373E94218CF270004A5EEA /* Amazon sign in.png */; };
 		D0373E97218D14C7004A5EEA /* Spotify sign in.png in Resources */ = {isa = PBXBuildFile; fileRef = D0373E96218D14C6004A5EEA /* Spotify sign in.png */; };
 		D0373E99218D6503004A5EEA /* SettingsFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */; };
+		D0373EA1218FB7A3004A5EEA /* ZumaInstallationBeginningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373EA0218FB7A2004A5EEA /* ZumaInstallationBeginningViewController.swift */; };
+		D0373EA3218FBB30004A5EEA /* SettingsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373EA2218FBB30004A5EEA /* SettingsMenuViewController.swift */; };
 		D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */; };
 		D08847CA2180C630003D4E75 /* SpaceNamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */; };
 		D08847CC2183700F003D4E75 /* ZumaInstallationComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */; };
@@ -177,6 +179,8 @@
 		D0373E94218CF270004A5EEA /* Amazon sign in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Amazon sign in.png"; sourceTree = "<group>"; };
 		D0373E96218D14C6004A5EEA /* Spotify sign in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotify sign in.png"; sourceTree = "<group>"; };
 		D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFeaturesViewController.swift; sourceTree = "<group>"; };
+		D0373EA0218FB7A2004A5EEA /* ZumaInstallationBeginningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationBeginningViewController.swift; sourceTree = "<group>"; };
+		D0373EA2218FBB30004A5EEA /* SettingsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenuViewController.swift; sourceTree = "<group>"; };
 		D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPasswordViewController.swift; sourceTree = "<group>"; };
 		D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNamePickerViewController.swift; sourceTree = "<group>"; };
 		D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationComplete.swift; sourceTree = "<group>"; };
@@ -386,6 +390,7 @@
 				D0BE3FC0217FB9B7004FDB45 /* RoomDetailViewController.swift */,
 				D0BE3FBE217FB6EB004FDB45 /* RoomActionViewController.swift */,
 				D0C09DC5217F9C7A00393BEE /* Main.storyboard */,
+				D0373EA0218FB7A2004A5EEA /* ZumaInstallationBeginningViewController.swift */,
 				D0BE3FC2217FE023004FDB45 /* ZumaSearchViewController.swift */,
 				D0BE3FC4217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift */,
 				D0373E90218CE732004A5EEA /* ZumaServiceLauncherViewController.swift */,
@@ -393,6 +398,7 @@
 				D08AB0A821803180009261FC /* NetworkSelectionViewController.swift */,
 				D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */,
 				D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */,
+				D0373EA2218FBB30004A5EEA /* SettingsMenuViewController.swift */,
 				D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */,
 				D0C09DC8217F9C7A00393BEE /* Assets.xcassets */,
 				D0C09DCD217F9C7A00393BEE /* Info.plist */,
@@ -806,6 +812,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BE3FC1217FB9B7004FDB45 /* RoomDetailViewController.swift in Sources */,
+				D0373EA1218FB7A3004A5EEA /* ZumaInstallationBeginningViewController.swift in Sources */,
 				D0373E91218CE732004A5EEA /* ZumaServiceLauncherViewController.swift in Sources */,
 				D08847CC2183700F003D4E75 /* ZumaInstallationComplete.swift in Sources */,
 				D0BE3FC3217FE023004FDB45 /* ZumaSearchViewController.swift in Sources */,
@@ -816,6 +823,7 @@
 				D08847D62183D8D4003D4E75 /* DashboardLightsViewController.swift in Sources */,
 				D08AB0A921803180009261FC /* NetworkSelectionViewController.swift in Sources */,
 				D0BE3FC5217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift in Sources */,
+				D0373EA3218FBB30004A5EEA /* SettingsMenuViewController.swift in Sources */,
 				D08847D42183D8AD003D4E75 /* DashboardSoundViewController.swift in Sources */,
 				D08847D82183D8F9003D4E75 /* DashboardSecurityViewController.swift in Sources */,
 				D08847D021837B11003D4E75 /* DashboardPageViewController.swift in Sources */,

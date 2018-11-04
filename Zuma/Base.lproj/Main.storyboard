@@ -245,7 +245,7 @@
         <!--Menu-->
         <scene sceneID="BBI-7x-VV5">
             <objects>
-                <viewController title="Menu" id="GBR-2O-dHC" sceneMemberID="viewController">
+                <viewController title="Menu" id="GBR-2O-dHC" customClass="SettingsMenuViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yEW-dZ-551">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -664,7 +664,7 @@
         <!--No Zuma's Found-->
         <scene sceneID="JcC-iH-tkG">
             <objects>
-                <viewController title="No Zuma's Found" id="obg-CH-p9d" sceneMemberID="viewController">
+                <viewController title="No Zuma's Found" id="obg-CH-p9d" customClass="ZumaInstallationBeginningViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fXi-V4-ddk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -708,7 +708,7 @@
             <objects>
                 <viewController title="Select a Zuma to configure" id="K6M-Et-H8c" customClass="ZumaSearchFoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rYC-tY-Q2I">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-83-z2J">
@@ -1556,7 +1556,7 @@
                     </view>
                     <connections>
                         <segue destination="N1p-pu-zBs" kind="unwind" identifier="unwind.to.room.view" unwindAction="unwindToRoomViewWithSegue:" id="XZ0-lm-OFy"/>
-                        <segue destination="cjd-oz-mkw" kind="show" identifier="First Run Service Setup" id="RCm-89-Qr8"/>
+                        <segue destination="cjd-oz-mkw" kind="show" identifier="first.run.service.setup" id="RCm-89-Qr8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuD-yP-Wt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1601,7 +1601,7 @@ But for now, clicking on this text will take us to the end of that workflow and 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eG4-YF-683" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3119" y="120"/>
+            <point key="canvasLocation" x="3062" y="120"/>
         </scene>
         <!--Test the Installation-->
         <scene sceneID="3ll-xl-6DO">
@@ -1923,10 +1923,10 @@ Click here to simulate choosing one...</string>
         <image name="settings.png" width="21" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Y3e-ao-Je9"/>
+        <segue reference="uQx-Lo-CXr"/>
         <segue reference="nF9-Du-pq0"/>
         <segue reference="vH0-V1-lT7"/>
         <segue reference="RTc-YZ-y4M"/>
-        <segue reference="yIv-CE-dFM"/>
+        <segue reference="yCR-oN-oaq"/>
     </inferredMetricsTieBreakers>
 </document>

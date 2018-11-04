@@ -27,7 +27,7 @@ class ZumaInstallationComplete: UIViewController {
         
         if ( sharedAppDelegate().firstLaunch == true) {
             sharedAppDelegate().firstLaunch = false
-            performSegue(withIdentifier:"First Run Service Setup", sender: self)
+            performSegue(withIdentifier:"first.run.service.setup", sender: self)
         } else {
             performSegue(withIdentifier:"unwind.to.room.view", sender: self)
         }

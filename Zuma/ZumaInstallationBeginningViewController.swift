@@ -1,14 +1,14 @@
 //
-//  SettingsFeaturesViewController.swift
+//  ZumaInstallationBeginningViewController.swift
 //  Zuma
 //
-//  Created by Peter Nelson on 11/2/18.
+//  Created by Peter Nelson on 11/4/18.
 //  Copyright © 2018 Native. All rights reserved.
 //
 
 import UIKit
 
-class SettingsFeaturesViewController: UIViewController {
+class ZumaInstallationBeginningViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +21,6 @@ class SettingsFeaturesViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         //navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
         //navigationItem.title = "Zuma Home"
-    }
-    
-    @IBAction func unwindOnServiceSetupComplete(segue: UIStoryboardSegue) {
-        //print("unwind segue with ID: %@", segue.identifier!)
     }
 
     /*

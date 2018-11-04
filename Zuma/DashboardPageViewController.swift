@@ -33,6 +33,19 @@ class DashboardPageViewController: UIPageViewController, UIPageViewControllerDat
         configurePageControl()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setupNavBar()
+    }
+    
+    func setupNavBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
+        navigationItem.title = "Zuma Home"
+    }
+    
+
+    
+    
     func configurePageControl() {
         pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 50,width: UIScreen.main.bounds.width,height: 50))
         self.pageControl.numberOfPages = subViewControllers.count

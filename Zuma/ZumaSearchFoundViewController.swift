@@ -13,15 +13,25 @@ class ZumaSearchFoundViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupNavBar()
+
+    }
+    
+    func setupNavBar() {
+        navigationController?.navigationBar.prefersLargeTitles = false
+        //navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
+        //navigationItem.title = "Zuma Home"
+        
         // Hide the back button
         let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
         navigationItem.leftBarButtonItem = backButton
         
         
-//        let myButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
-//        let action = #selector(ZumaSearchFoundViewController.tappedButton)     // target function must have @obj heading or @IBAction heading
-//        myButton.addTarget(self, action: action, for: .touchUpInside)
+        //        let myButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+        //        let action = #selector(ZumaSearchFoundViewController.tappedButton)     // target function must have @obj heading or @IBAction heading
+        //        myButton.addTarget(self, action: action, for: .touchUpInside)
     }
+    
     
 //    @objc func tappedButton(_ sender: UIButton?) {
 //        print("tapped button")

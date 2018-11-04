@@ -35,7 +35,7 @@ class DashboardRoomsViewController: UIViewController {
             let longGesture = UILongPressGestureRecognizer(target: self, action: #selector(longTap(_:)))
             roomButton.addGestureRecognizer(longGesture)
         }
-        
+
         // For first launch - let's pop up a 'no devices found' screen and take users through the flow to add them
         self.performSegue(withIdentifier:"No Devices", sender: self)
     }
