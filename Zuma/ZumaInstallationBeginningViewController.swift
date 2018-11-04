@@ -21,6 +21,10 @@ class ZumaInstallationBeginningViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         //navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
         //navigationItem.title = "Zuma Home"
+        
+        // Hide the back button
+        let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
+        navigationItem.leftBarButtonItem = backButton
     }
 
     /*

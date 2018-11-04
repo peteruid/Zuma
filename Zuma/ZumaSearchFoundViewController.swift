@@ -23,8 +23,8 @@ class ZumaSearchFoundViewController: UIViewController {
         //navigationItem.title = "Zuma Home"
         
         // Hide the back button
-        let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
-        navigationItem.leftBarButtonItem = backButton
+    //    let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
+    //    navigationItem.leftBarButtonItem = backButton
         
         
         //        let myButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50))

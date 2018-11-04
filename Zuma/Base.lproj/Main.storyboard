@@ -708,7 +708,7 @@
             <objects>
                 <viewController title="Select a Zuma to configure" id="K6M-Et-H8c" customClass="ZumaSearchFoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rYC-tY-Q2I">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-83-z2J">
@@ -1927,6 +1927,6 @@ Click here to simulate choosing one...</string>
         <segue reference="nF9-Du-pq0"/>
         <segue reference="vH0-V1-lT7"/>
         <segue reference="RTc-YZ-y4M"/>
-        <segue reference="yCR-oN-oaq"/>
+        <segue reference="yIv-CE-dFM"/>
     </inferredMetricsTieBreakers>
 </document>
