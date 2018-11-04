@@ -211,12 +211,12 @@
                         <segue destination="8gQ-AS-kMM" kind="popoverPresentation" identifier="Room Clicked" popoverAnchorView="8bC-Xf-vdC" id="KYI-eB-HnB">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
-                        <segue destination="cjd-oz-mkw" kind="show" identifier="No Devices" id="KCn-BC-z5f"/>
+                        <segue destination="obg-CH-p9d" kind="show" identifier="No Devices" id="hEK-bS-AvG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="-316"/>
+            <point key="canvasLocation" x="265" y="-802"/>
         </scene>
         <!--Room Details-->
         <scene sceneID="DR3-11-Jkb">
@@ -240,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUW-XO-cXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-954" y="-282"/>
+            <point key="canvasLocation" x="-954" y="-9"/>
         </scene>
         <!--Menu-->
         <scene sceneID="BBI-7x-VV5">
@@ -352,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oe-dA-UEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="485"/>
+            <point key="canvasLocation" x="214" y="830"/>
         </scene>
         <!--Zuma Features-->
         <scene sceneID="Wwd-yM-QaH">
@@ -493,7 +493,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Slg-QP-WKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1945" y="-44"/>
+            <point key="canvasLocation" x="1655" y="-802"/>
         </scene>
         <!--People-->
         <scene sceneID="TAe-bt-CiR">
@@ -509,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQJ-6v-3jY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="1308"/>
+            <point key="canvasLocation" x="214" y="1653"/>
         </scene>
         <!--Dashboard Page View Controller-->
         <scene sceneID="G3U-1g-qW3">
@@ -525,7 +525,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r41-ke-2nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-954" y="485"/>
+            <point key="canvasLocation" x="-954" y="830"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Og-AK-Lb8">
@@ -543,7 +543,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35K-Lk-kh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1655" y="485"/>
+            <point key="canvasLocation" x="-1655" y="830"/>
         </scene>
         <!--Your Security Dashboard-->
         <scene sceneID="lvT-v9-B3d">
@@ -572,7 +572,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVA-z0-INs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1946" y="-1017"/>
+            <point key="canvasLocation" x="-1946" y="-1663"/>
         </scene>
         <!--Your Lighting Dashboard-->
         <scene sceneID="MJi-gm-QUE">
@@ -601,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4Q-r9-2Tz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1247" y="-1017"/>
+            <point key="canvasLocation" x="-1247" y="-1663"/>
         </scene>
         <!--Your Sound Dashboard-->
         <scene sceneID="39X-Dw-69s">
@@ -630,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHI-NV-OSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-514" y="-1017"/>
+            <point key="canvasLocation" x="-514" y="-1663"/>
         </scene>
         <!--Your Home Dashboard-->
         <scene sceneID="MuS-7K-SaX">
@@ -659,7 +659,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dud-vC-QxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="-1017"/>
+            <point key="canvasLocation" x="214" y="-1663"/>
         </scene>
         <!--No Zuma's Found-->
         <scene sceneID="JcC-iH-tkG">
@@ -701,14 +701,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukx-V7-bRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="80j-7g-EPe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1945" y="1308"/>
+            <point key="canvasLocation" x="1833" y="120"/>
         </scene>
         <!--Select a Zuma to configure-->
         <scene sceneID="SZB-x7-xda">
             <objects>
                 <viewController title="Select a Zuma to configure" id="K6M-Et-H8c" customClass="ZumaSearchFoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rYC-tY-Q2I">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-83-z2J">
@@ -839,7 +839,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cm-i9-zM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3119" y="1308"/>
+            <point key="canvasLocation" x="2930" y="1088"/>
         </scene>
         <!--Services-->
         <scene sceneID="1ZD-Gg-L2l">
@@ -906,7 +906,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <segue destination="obg-CH-p9d" kind="show" id="hoN-bw-Fzm"/>
+                                    <segue destination="2yt-z4-e1H" kind="unwind" unwindAction="unwindToRoomViewWithSegue:" id="aS9-LD-1BW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -921,8 +921,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0O9-i9-ETK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2yt-z4-e1H" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1945" y="-706"/>
+            <point key="canvasLocation" x="1601" y="-1956"/>
         </scene>
         <!--Setup Apple HomeKit-->
         <scene sceneID="pOV-Pw-Am9">
@@ -1555,12 +1556,13 @@
                     </view>
                     <connections>
                         <segue destination="N1p-pu-zBs" kind="unwind" identifier="unwind.to.room.view" unwindAction="unwindToRoomViewWithSegue:" id="XZ0-lm-OFy"/>
+                        <segue destination="cjd-oz-mkw" kind="show" identifier="First Run Service Setup" id="RCm-89-Qr8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuD-yP-Wt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="N1p-pu-zBs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4303" y="1671"/>
+            <point key="canvasLocation" x="988" y="1827"/>
         </scene>
         <!--Physical Installation Guide-->
         <scene sceneID="ToM-yb-fHA">
@@ -1723,7 +1725,7 @@ Click here to simulate choosing one...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfI-hr-TtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3894" y="815"/>
+            <point key="canvasLocation" x="4572" y="794"/>
         </scene>
         <!--Network Password-->
         <scene sceneID="ALq-rf-I9D">
@@ -1762,7 +1764,7 @@ Click here to simulate choosing one...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7p-MD-BQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4602" y="815"/>
+            <point key="canvasLocation" x="5321" y="795"/>
         </scene>
         <!--Name this Space-->
         <scene sceneID="Ev7-fr-hA9">
@@ -1817,7 +1819,7 @@ Click here to simulate choosing one...</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyP-47-dti" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hG3-dT-ezr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5386" y="1308"/>
+            <point key="canvasLocation" x="5322" y="1563"/>
         </scene>
         <!--Choose a Space-->
         <scene sceneID="WlH-QV-aVg">
@@ -1873,7 +1875,7 @@ Click here to simulate choosing one...</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ylD-Gv-Y4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8ei-dU-XMI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6022" y="1308"/>
+            <point key="canvasLocation" x="6044" y="1563"/>
         </scene>
         <!--Room Action View Controller-->
         <scene sceneID="j4M-VY-Hpa">
@@ -1905,7 +1907,7 @@ Click here to simulate choosing one...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuA-dL-E71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1655" y="-282"/>
+            <point key="canvasLocation" x="-1655" y="-9"/>
         </scene>
     </scenes>
     <resources>
@@ -1925,6 +1927,6 @@ Click here to simulate choosing one...</string>
         <segue reference="nF9-Du-pq0"/>
         <segue reference="vH0-V1-lT7"/>
         <segue reference="RTc-YZ-y4M"/>
-        <segue reference="yCR-oN-oaq"/>
+        <segue reference="yIv-CE-dFM"/>
     </inferredMetricsTieBreakers>
 </document>

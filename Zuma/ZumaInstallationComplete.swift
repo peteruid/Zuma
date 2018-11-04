@@ -9,16 +9,28 @@
 import UIKit
 
 class ZumaInstallationComplete: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    
+     func sharedAppDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+     }
+     //UIWindow mainWindow = UIApplication.sharedApplication().delegate?.window
+ 
 
     @IBAction func onDoneButton(_ sender: Any) {
-        performSegue(withIdentifier:"unwind.to.room.view", sender: self)
+        
+        if ( sharedAppDelegate().firstLaunch == true) {
+            sharedAppDelegate().firstLaunch = false
+            performSegue(withIdentifier:"First Run Service Setup", sender: self)
+        } else {
+            performSegue(withIdentifier:"unwind.to.room.view", sender: self)
+        }
     }
     
     /*
