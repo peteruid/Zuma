@@ -33,19 +33,27 @@ class SettingsPeopleViewController: UIViewController, UITableViewDataSource, UIT
         // Pass the selected object to the new view controller.
     }
     */
-    
-    /*
+
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
-        //view.tintColor = UIColor.red
-
-        //let header = view as! UITableViewHeaderFooterView
-        //header.textLabel?.textColor = UIColor.white
-        //header.tintColor = UIColor.white
-        header.contentView.backgroundColor = .lightGray
-
+        
+        let header = view as! UITableViewHeaderFooterView
+        
+        header.textLabel?.textColor = .darkGray
+        header.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 14)
+        
+        header.contentView.backgroundColor = .white
     }
-    */
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
     
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 5
+    }
+    
+    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         return sectionTitles[section]
@@ -107,6 +115,7 @@ class SettingsPeopleViewController: UIViewController, UITableViewDataSource, UIT
             break
          }
  
+        //cell.backgroundColor = .white
         
         // Return the configured cell
         return cell
