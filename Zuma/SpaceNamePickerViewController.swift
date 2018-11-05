@@ -72,8 +72,13 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view.
     }
     
+    func sharedAppDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+
 
     @IBAction func onNetworkPasswordSubmit(_ sender: Any) {
+        sharedAppDelegate().networkEstablished = true;
         performSegue(withIdentifier:"unwind.to.zuma.search.found.view", sender: self)
     }
     

@@ -56,6 +56,29 @@ class ZumaSearchFoundViewController: UIViewController {
         performSegue(withIdentifier:"Name Zuma Space", sender: self)
     }
     
+    @IBOutlet weak var satellite1: UIButton!
+    @IBOutlet weak var satellite2: UIButton!
+    @IBOutlet weak var satelliteDistance1: UILabel!
+    @IBOutlet weak var satelliteDistance2: UILabel!
+    
+    func sharedAppDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if (sharedAppDelegate().networkEstablished == false) {
+            satellite1.isHidden = true
+            satellite2.isHidden = true
+            satelliteDistance1.isHidden = true
+            satelliteDistance2.isHidden = true
+        } else {
+            satellite1.isHidden = false
+            satellite2.isHidden = false
+            satelliteDistance1.isHidden = false
+            satelliteDistance2.isHidden = false
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
