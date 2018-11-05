@@ -715,7 +715,7 @@
                                 <rect key="frame" x="18" y="101" width="231" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="-5" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Zuma Master Ver 1.0" image="badge_blue.png">
+                                <state key="normal" title="Zuma Master Ver 1.0" image="badge_plus.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -726,7 +726,7 @@
                                 <rect key="frame" x="18" y="153" width="231" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="-5" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Zuma Master Ver 1.0" image="badge_blue.png">
+                                <state key="normal" title="Zuma Master Ver 1.0" image="badge_plus.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -737,7 +737,7 @@
                                 <rect key="frame" x="18" y="209" width="231" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="-5" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Zuma Master Ver 1.0" image="badge_blue.png">
+                                <state key="normal" title="Zuma Master Ver 1.0" image="badge_plus.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -776,7 +776,7 @@
                                 <rect key="frame" x="18" y="263" width="231" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="-5" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Zuma Master Ver 1.0" image="badge_blue.png">
+                                <state key="normal" title="Zuma Master Ver 1.0" image="badge_plus.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -787,7 +787,7 @@
                                 <rect key="frame" x="23" y="350" width="231" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="-5" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Zuma Satellite Ver 1.0" image="badge_blue.png">
+                                <state key="normal" title="Zuma Satellite Ver 1.0" image="badge_plus.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -812,7 +812,7 @@
                                 <rect key="frame" x="23" y="404" width="231" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="-5" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Zuma Satellite Ver 1.0" image="badge_blue.png">
+                                <state key="normal" title="Zuma Satellite Ver 1.0" image="badge_plus.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -1827,8 +1827,8 @@ This first time, we will need to get your network credentials to attach this Zum
                                     <outlet property="delegate" destination="GXa-jX-bMg" id="Jbn-Od-AGS"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please name the space that this master Zuma is going into." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgD-op-rR8">
-                                <rect key="frame" x="45" y="114" width="294" height="108"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please name the space that this master Zuma is going into." lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgD-op-rR8">
+                                <rect key="frame" x="45" y="83" width="294" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1892,8 +1892,8 @@ This first time, we will need to get your network credentials to attach this Zum
     <resources>
         <image name="Amazon sign in.png" width="275" height="313"/>
         <image name="Spotify sign in.png" width="280" height="456"/>
-        <image name="badge_blue.png" width="30" height="34"/>
         <image name="badge_green_check.png" width="25" height="25"/>
+        <image name="badge_plus.png" width="29" height="29"/>
         <image name="bubble.png" width="32" height="25"/>
         <image name="check-green.png" width="21" height="19"/>
         <image name="dashboard.png" width="687" height="1269"/>

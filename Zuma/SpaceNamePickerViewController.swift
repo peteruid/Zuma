@@ -27,10 +27,10 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         
         if (isMaster) {
             self.title = "Name this Space"
-            directionsLabel.text = "Please name the space that this master Zuma is going into."
+            directionsLabel.text = "This is a Master Zuma.   Please choose a new space name from the list below and this Zuma will create that space in your Zuma Home."
         } else {
             self.title = "Choose a Space"
-            directionsLabel.text = "Please choose a space for this satellite Zuma from the list below."
+            directionsLabel.text = "Please choose an existing space in your home for this satellite Zuma from the list below."
         }
     }
     

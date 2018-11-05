@@ -49,6 +49,11 @@ class ZumaSearchFoundViewController: UIViewController {
     
     
     @IBAction func onZumaButtonClicked(_ sender: UIButton) {
+        
+        let doneImage = UIImage(named: "badge_blue_check")
+        sender.setImage(doneImage, for: .normal)
+        sender.alpha = 0.2
+        
         if (sender.tag == 1) {
             sharedAppDelegate().currentZumaBeingSetUpIsMaster = false
         } else {
