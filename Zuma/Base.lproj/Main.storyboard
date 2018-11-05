@@ -1543,7 +1543,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUK-WE-xaf">
-                                <rect key="frame" x="116" y="712" width="142" height="30"/>
+                                <rect key="frame" x="16" y="712" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Let's have some fun!"/>
                                 <connections>
@@ -1555,6 +1555,7 @@
                         <viewLayoutGuide key="safeArea" id="YHR-RE-i85"/>
                     </view>
                     <connections>
+                        <outlet property="doneButton" destination="XUK-WE-xaf" id="tDF-ON-LTg"/>
                         <segue destination="N1p-pu-zBs" kind="unwind" identifier="unwind.to.room.view" unwindAction="unwindToRoomViewWithSegue:" id="XZ0-lm-OFy"/>
                         <segue destination="cjd-oz-mkw" kind="show" identifier="first.run.service.setup" id="RCm-89-Qr8"/>
                     </connections>
@@ -1562,7 +1563,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuD-yP-Wt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="N1p-pu-zBs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="988" y="1827"/>
+            <point key="canvasLocation" x="988" y="1826.600985221675"/>
         </scene>
         <!--Physical Installation Guide-->
         <scene sceneID="ToM-yb-fHA">

@@ -14,8 +14,12 @@ class ZumaInstallationComplete: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if ( sharedAppDelegate().firstLaunch == true) {
+            doneButton.setTitle( "Now let's configure some services", for: .normal)
+        }
     }
     
+    @IBOutlet weak var doneButton: UIButton!
     
      func sharedAppDelegate() -> AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
