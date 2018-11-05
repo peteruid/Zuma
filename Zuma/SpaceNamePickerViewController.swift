@@ -69,18 +69,6 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         
         return existing.count
         
-        
-    /*    switch section {
-        case 0:
-            // Fruit Section
-            return existing.count
-        case 1:
-            // Vegetable Section
-            return suggestions.count
-        default:
-            return 0
-        }
-      */
     }
     
     
@@ -97,21 +85,6 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         } else {
             cell.textLabel?.text = existing[indexPath.row]
         }
-        
-        /*
-         switch indexPath.section {
-        case 0:
-            // Fruit Section
-            cell.textLabel?.text = existing[indexPath.row]
-            break
-        case 1:
-            // Vegetable Section
-            cell.textLabel?.text = suggestions[indexPath.row]
-            break
-        default:
-            break
-        }
-        */
         
         // Return the configured cell
         return cell
