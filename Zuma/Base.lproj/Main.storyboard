@@ -719,7 +719,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7mT-3B-bqi" kind="show" id="Sgi-uz-Llj"/>
+                                    <action selector="onZumaButtonClicked:" destination="K6M-Et-H8c" eventType="touchUpInside" id="NF2-h6-JVt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTN-3X-xQq">
@@ -837,13 +837,13 @@
                         <outlet property="satellite2" destination="G0t-A6-cbS" id="jTQ-16-gPI"/>
                         <outlet property="satelliteDistance1" destination="2ky-Tl-UdE" id="NRI-lS-8XI"/>
                         <outlet property="satelliteDistance2" destination="XLh-e5-GZn" id="nzL-Yx-B22"/>
-                        <segue destination="GXa-jX-bMg" kind="show" identifier="Name Zuma Space" id="uQx-Lo-CXr"/>
-                        <segue destination="brg-V8-Bal" kind="show" identifier="Choose Zuma Space" id="p5N-mV-VKT"/>
+                        <segue destination="GXa-jX-bMg" kind="show" identifier="Choose Zuma Space" id="uQx-Lo-CXr"/>
+                        <segue destination="7mT-3B-bqi" kind="show" identifier="Choose Zuma Network" id="TD0-jg-X2s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cm-i9-zM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2930" y="1088"/>
+            <point key="canvasLocation" x="2906" y="1184"/>
         </scene>
         <!--Services-->
         <scene sceneID="1ZD-Gg-L2l">
@@ -1582,7 +1582,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuD-yP-Wt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="N1p-pu-zBs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6752.8000000000002" y="1087.6847290640394"/>
+            <point key="canvasLocation" x="6359" y="1166"/>
         </scene>
         <!--Physical Installation Guide-->
         <scene sceneID="ToM-yb-fHA">
@@ -1725,29 +1725,28 @@ Etc.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nw-RE-WQu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nw-RE-WQu">
                                 <rect key="frame" x="16" y="80" width="343" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">It looks like this is the very first Zuma you have set up in your home.   Congratulations!    This first time, we will need to get your network credentials to attach this Zuma to your home.   After that though - all Zumas will automatically connect without you having to do anything further.</string>
+                                <string key="text">It looks like this is the very first Zuma you have set up in your home.   Congratulations! 
+
+This first time, we will need to get your network credentials to attach this Zuma to your home.   After that, all Zumas will automatically connect without you having to do anything further.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please choose the network you'd like to use for Zuma from the list below." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xd-ay-2JN">
-                                <rect key="frame" x="16" y="252" width="343" height="56"/>
+                                <rect key="frame" x="16" y="256" width="343" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="saL-10-iQZ">
-                                <rect key="frame" x="64" y="420" width="246" height="144"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="saL-10-iQZ">
+                                <rect key="frame" x="16" y="397" width="327" height="353"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
-                                <state key="normal">
-                                    <string key="title">Give me an image for a list of networks...
-
-Click here to simulate choosing one...</string>
+                                <state key="normal" image="networkSelectionImage.png">
+                                    <color key="titleColor" red="1" green="0.10536161519999999" blue="0.11858308369999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="jcR-wN-Mf8" kind="show" id="hMD-dw-zlF"/>
@@ -1848,6 +1847,7 @@ Click here to simulate choosing one...</string>
                         <viewLayoutGuide key="safeArea" id="vXn-f8-mii"/>
                     </view>
                     <connections>
+                        <outlet property="directionsLabel" destination="BgD-op-rR8" id="8Sg-yK-lxi"/>
                         <segue destination="hG3-dT-ezr" kind="unwind" identifier="unwind.to.zuma.search.found.view" unwindAction="unwindToZumaSearchFoundViewWithSegue:" id="LKg-x0-3zw"/>
                     </connections>
                 </viewController>
@@ -1855,62 +1855,6 @@ Click here to simulate choosing one...</string>
                 <exit id="hG3-dT-ezr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5322" y="1563"/>
-        </scene>
-        <!--Choose a Space-->
-        <scene sceneID="WlH-QV-aVg">
-            <objects>
-                <viewController title="Choose a Space" id="brg-V8-Bal" customClass="SpaceNamePickerViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lKo-Kq-ayE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="eC2-Hj-c9f">
-                                <rect key="frame" x="0.0" y="231" width="375" height="482"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SpaceNameCell" id="09k-EY-6Ec">
-                                        <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="09k-EY-6Ec" id="0U2-2m-z6w">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="brg-V8-Bal" id="2fJ-5Q-xtM"/>
-                                    <outlet property="delegate" destination="brg-V8-Bal" id="JMo-fA-MNq"/>
-                                </connections>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please choose a space for this satellite Zuma from the list below." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8Y-hg-Ufk">
-                                <rect key="frame" x="45" y="115" width="295" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdz-ez-13M">
-                                <rect key="frame" x="163" y="733" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="onNetworkPasswordSubmit:" destination="brg-V8-Bal" eventType="touchUpInside" id="4Xh-CU-ILl"/>
-                                    <action selector="onNetworkPasswordSubmit:" destination="GXa-jX-bMg" eventType="touchUpInside" id="ZBc-aj-dnz"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="m7Z-j6-JFS"/>
-                    </view>
-                    <connections>
-                        <segue destination="8ei-dU-XMI" kind="unwind" identifier="unwind.to.zuma.search.found.view" unwindAction="unwindToZumaSearchFoundViewWithSegue:" id="kb5-rg-87V"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ylD-Gv-Y4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="8ei-dU-XMI" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="6044" y="1563"/>
         </scene>
         <!--Room Action View Controller-->
         <scene sceneID="j4M-VY-Hpa">
@@ -1956,6 +1900,7 @@ Click here to simulate choosing one...</string>
         <image name="dashboardLights.png" width="689" height="1294"/>
         <image name="dashboardSecurity.png" width="691" height="1307"/>
         <image name="dashboardSound.png" width="687" height="1288"/>
+        <image name="networkSelectionImage.png" width="274" height="341"/>
         <image name="settings.png" width="21" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>

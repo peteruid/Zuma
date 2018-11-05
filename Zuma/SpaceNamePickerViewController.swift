@@ -9,24 +9,68 @@
 import UIKit
 
 class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
+    
 
+    var isMaster:Bool = false
     let sections = ["Existing", "New"]
     let existing = ["Master Bedroom", "Living Room", "Cora's Room", "John's Room", "Garage", "Kitchen", "Bathroom"]
-    let suggestions = ["Patio", "Den", "Bat Cave"]
+    let suggestions = ["Patio", "Den", "Bat Cave", "Bathroom", "Den", "Study"]
+    
+    
+    @IBOutlet weak var directionsLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        isMaster = sharedAppDelegate().currentZumaBeingSetUpIsMaster
+        
+        if (isMaster) {
+            self.title = "Name this Space"
+            directionsLabel.text = "Please name the space that this master Zuma is going into."
+        } else {
+            self.title = "Choose a Space"
+            directionsLabel.text = "Please choose a space for this satellite Zuma from the list below."
+        }
+    }
+    
+    func sharedAppDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    
+
+    
+    
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section]
+
+        if (isMaster) {
+            return sections[1]
+        }
+        
+        return sections[0]
+        
+        //return sections[section]
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        if (self.title == "Choose a Space") {
-            return 1;
-        }
-        return sections.count
+        
+        return 1;
+        //return sections.count
     }
+   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
+        
+        if (isMaster) {
+            return suggestions.count
+        }
+        
+        return existing.count
+        
+        
+    /*    switch section {
         case 0:
             // Fruit Section
             return existing.count
@@ -36,6 +80,7 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         default:
             return 0
         }
+      */
     }
     
     
@@ -45,8 +90,16 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create an object of the dynamic cell "PlainCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: "SpaceNameCell", for: indexPath)
+        
         // Depending on the section, fill the textLabel with the relevant text
-        switch indexPath.section {
+        if (isMaster) {
+            cell.textLabel?.text = suggestions[indexPath.row]
+        } else {
+            cell.textLabel?.text = existing[indexPath.row]
+        }
+        
+        /*
+         switch indexPath.section {
         case 0:
             // Fruit Section
             cell.textLabel?.text = existing[indexPath.row]
@@ -58,6 +111,7 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         default:
             break
         }
+        */
         
         // Return the configured cell
         return cell
@@ -66,15 +120,7 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
     
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-    
-    func sharedAppDelegate() -> AppDelegate {
-        return UIApplication.shared.delegate as! AppDelegate
-    }
 
 
     @IBAction func onNetworkPasswordSubmit(_ sender: Any) {

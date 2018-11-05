@@ -50,10 +50,16 @@ class ZumaSearchFoundViewController: UIViewController {
     
     @IBAction func onZumaButtonClicked(_ sender: UIButton) {
         if (sender.tag == 1) {
-            performSegue(withIdentifier:"Choose Zuma Space", sender: self)
-            return;
+            sharedAppDelegate().currentZumaBeingSetUpIsMaster = false
+        } else {
+            sharedAppDelegate().currentZumaBeingSetUpIsMaster = true
         }
-        performSegue(withIdentifier:"Name Zuma Space", sender: self)
+        
+        if (sharedAppDelegate().networkEstablished) {
+            performSegue(withIdentifier:"Choose Zuma Space", sender: self)
+        } else {
+            performSegue(withIdentifier:"Choose Zuma Network", sender: self)
+        }
     }
     
     @IBOutlet weak var satellite1: UIButton!
