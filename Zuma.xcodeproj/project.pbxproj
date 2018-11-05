@@ -14,6 +14,9 @@
 		D0373EA1218FB7A3004A5EEA /* ZumaInstallationBeginningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373EA0218FB7A2004A5EEA /* ZumaInstallationBeginningViewController.swift */; };
 		D0373EA3218FBB30004A5EEA /* SettingsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373EA2218FBB30004A5EEA /* SettingsMenuViewController.swift */; };
 		D0373EA52190B9F5004A5EEA /* networkSelectionImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0373EA42190B9F5004A5EEA /* networkSelectionImage.png */; };
+		D06C12F92190E57600816E87 /* Nest1.png in Resources */ = {isa = PBXBuildFile; fileRef = D06C12F72190E57400816E87 /* Nest1.png */; };
+		D06C12FA2190E57600816E87 /* Nest2.png in Resources */ = {isa = PBXBuildFile; fileRef = D06C12F82190E57500816E87 /* Nest2.png */; };
+		D06C12FC2190F03400816E87 /* SettingsPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C12FB2190F03400816E87 /* SettingsPeopleViewController.swift */; };
 		D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */; };
 		D08847CA2180C630003D4E75 /* SpaceNamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */; };
 		D08847CC2183700F003D4E75 /* ZumaInstallationComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */; };
@@ -183,6 +186,9 @@
 		D0373EA0218FB7A2004A5EEA /* ZumaInstallationBeginningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationBeginningViewController.swift; sourceTree = "<group>"; };
 		D0373EA2218FBB30004A5EEA /* SettingsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenuViewController.swift; sourceTree = "<group>"; };
 		D0373EA42190B9F5004A5EEA /* networkSelectionImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = networkSelectionImage.png; sourceTree = "<group>"; };
+		D06C12F72190E57400816E87 /* Nest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nest1.png; sourceTree = "<group>"; };
+		D06C12F82190E57500816E87 /* Nest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nest2.png; sourceTree = "<group>"; };
+		D06C12FB2190F03400816E87 /* SettingsPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPeopleViewController.swift; sourceTree = "<group>"; };
 		D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPasswordViewController.swift; sourceTree = "<group>"; };
 		D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNamePickerViewController.swift; sourceTree = "<group>"; };
 		D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationComplete.swift; sourceTree = "<group>"; };
@@ -402,6 +408,7 @@
 				D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */,
 				D0373EA2218FBB30004A5EEA /* SettingsMenuViewController.swift */,
 				D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */,
+				D06C12FB2190F03400816E87 /* SettingsPeopleViewController.swift */,
 				D0C09DC8217F9C7A00393BEE /* Assets.xcassets */,
 				D0C09DCD217F9C7A00393BEE /* Info.plist */,
 				D0C09DCA217F9C7A00393BEE /* LaunchScreen.storyboard */,
@@ -430,6 +437,8 @@
 		D0C09EDB217FA4FC00393BEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D06C12F72190E57400816E87 /* Nest1.png */,
+				D06C12F82190E57500816E87 /* Nest2.png */,
 				D0373EA42190B9F5004A5EEA /* networkSelectionImage.png */,
 				D0373E94218CF270004A5EEA /* Amazon sign in.png */,
 				D0373E96218D14C6004A5EEA /* Spotify sign in.png */,
@@ -745,6 +754,7 @@
 				D0C09EA2217FA4DC00393BEE /* badge_blue_check@2x.png in Resources */,
 				D0C09E96217FA4DC00393BEE /* trash.wav in Resources */,
 				D0C09E8E217FA4DC00393BEE /* dot_blue_ring.png in Resources */,
+				D06C12FA2190E57600816E87 /* Nest2.png in Resources */,
 				D0C09EAA217FA4DC00393BEE /* btn_clock.png in Resources */,
 				D0C09EBA217FA4DC00393BEE /* badge_red_check2@2x.png in Resources */,
 				D0C09DC9217F9C7A00393BEE /* Assets.xcassets in Resources */,
@@ -754,6 +764,7 @@
 				D0C09E69217FA4DC00393BEE /* TopLeft.png in Resources */,
 				D0C09E7E217FA4DC00393BEE /* cloud@2x.png in Resources */,
 				D0C09E67217FA4DC00393BEE /* badge_exclamation.png in Resources */,
+				D06C12F92190E57600816E87 /* Nest1.png in Resources */,
 				D0C09E85217FA4DC00393BEE /* badge_green_check2@2x.png in Resources */,
 				D0C09EC7217FA4DC00393BEE /* settings@2x.png in Resources */,
 				D0C09E9A217FA4DC00393BEE /* border4@2x.png in Resources */,
@@ -833,6 +844,7 @@
 				D08847D021837B11003D4E75 /* DashboardPageViewController.swift in Sources */,
 				D08847CE21837ADD003D4E75 /* DashboardHomeViewController.swift in Sources */,
 				D08847CA2180C630003D4E75 /* SpaceNamePickerViewController.swift in Sources */,
+				D06C12FC2190F03400816E87 /* SettingsPeopleViewController.swift in Sources */,
 				D0C09DC2217F9C7A00393BEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
