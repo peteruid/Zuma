@@ -16,20 +16,40 @@ class ZumaServiceLauncherViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var alexaDoneCheckImage: UIImageView!
+    @IBOutlet weak var spotifyDoneCheckImage: UIImageView!
+    @IBOutlet weak var homekitDoneCheckImage: UIImageView!
+    
+    
     @IBAction func unwindOnServiceSetupComplete(segue: UIStoryboardSegue) {
         //print("unwind segue with ID: %@", segue.identifier!)
     }
     
     @IBAction func onSetupAmazon(_ sender: Any) {
         self.performSegue(withIdentifier:"InitialSetupAmazon", sender: self)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+            self.alexaDoneCheckImage.isHidden=false
+        }
+        
     }
     
     @IBAction func onSetupSpotify(_ sender: Any) {
         self.performSegue(withIdentifier:"InitialSetupSpotify", sender: self)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+            self.spotifyDoneCheckImage.isHidden=false
+        }
+        
     }
     
     @IBAction func onSetupApple(_ sender: Any) {
         self.performSegue(withIdentifier:"InitialSetupApple", sender: self)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+            self.homekitDoneCheckImage.isHidden=false
+        }
+        
     }
     
     
