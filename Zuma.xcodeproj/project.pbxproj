@@ -19,7 +19,7 @@
 		D06C12FC2190F03400816E87 /* SettingsPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C12FB2190F03400816E87 /* SettingsPeopleViewController.swift */; };
 		D06C12FE2190FA3800816E87 /* SettingsPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C12FD2190FA3800816E87 /* SettingsPeopleTableViewCell.swift */; };
 		D06C130221910E9200816E87 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06C130121910E9200816E87 /* StoreKit.framework */; };
-		D06C13042191287900816E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06C13032191287900816E87 /* Assets.xcassets */; };
+		D06C13062191F37000816E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06C13052191F37000816E87 /* Assets.xcassets */; };
 		D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */; };
 		D08847CA2180C630003D4E75 /* SpaceNamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */; };
 		D08847CC2183700F003D4E75 /* ZumaInstallationComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */; };
@@ -194,7 +194,7 @@
 		D06C12FD2190FA3800816E87 /* SettingsPeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPeopleTableViewCell.swift; sourceTree = "<group>"; };
 		D06C12FF21910E7A00816E87 /* Zuma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zuma.entitlements; sourceTree = "<group>"; };
 		D06C130121910E9200816E87 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		D06C13032191287900816E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		D06C13052191F37000816E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		D08847C721803E71003D4E75 /* NetworkPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPasswordViewController.swift; sourceTree = "<group>"; };
 		D08847C92180C630003D4E75 /* SpaceNamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNamePickerViewController.swift; sourceTree = "<group>"; };
 		D08847CB2183700F003D4E75 /* ZumaInstallationComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationComplete.swift; sourceTree = "<group>"; };
@@ -403,7 +403,6 @@
 		D0C09DC0217F9C7A00393BEE /* Zuma */ = {
 			isa = PBXGroup;
 			children = (
-				D06C12FF21910E7A00816E87 /* Zuma.entitlements */,
 				D0C09DC1217F9C7A00393BEE /* AppDelegate.swift */,
 				D08847CF21837B11003D4E75 /* DashboardPageViewController.swift */,
 				D08847D32183D8AD003D4E75 /* DashboardSoundViewController.swift */,
@@ -426,8 +425,9 @@
 				D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */,
 				D06C12FB2190F03400816E87 /* SettingsPeopleViewController.swift */,
 				D06C12FD2190FA3800816E87 /* SettingsPeopleTableViewCell.swift */,
-				D06C13032191287900816E87 /* Assets.xcassets */,
+				D06C13052191F37000816E87 /* Assets.xcassets */,
 				D0C09DCA217F9C7A00393BEE /* LaunchScreen.storyboard */,
+				D06C12FF21910E7A00816E87 /* Zuma.entitlements */,
 				D0C09DCD217F9C7A00393BEE /* Info.plist */,
 			);
 			path = Zuma;
@@ -781,6 +781,7 @@
 				D0C09E8E217FA4DC00393BEE /* dot_blue_ring.png in Resources */,
 				D06C12FA2190E57600816E87 /* Nest2.png in Resources */,
 				D0C09EAA217FA4DC00393BEE /* btn_clock.png in Resources */,
+				D06C13062191F37000816E87 /* Assets.xcassets in Resources */,
 				D0C09EBA217FA4DC00393BEE /* badge_red_check2@2x.png in Resources */,
 				D0C09E91217FA4DC00393BEE /* btn_phone2.png in Resources */,
 				D0C09E98217FA4DC00393BEE /* border2@2x.png in Resources */,
@@ -796,7 +797,6 @@
 				D0C09EB3217FA4DC00393BEE /* BottomRight.png in Resources */,
 				D0C09ECD217FA4DC00393BEE /* checkmark@2x.png in Resources */,
 				D0C09E65217FA4DC00393BEE /* btn_add.png in Resources */,
-				D06C13042191287900816E87 /* Assets.xcassets in Resources */,
 				D0C09E8D217FA4DC00393BEE /* exclamation@2x.png in Resources */,
 				D0C09EA4217FA4DC00393BEE /* badge_plus_light@2x.png in Resources */,
 				D0C09E6B217FA4DC00393BEE /* btn_x@2x.png in Resources */,
