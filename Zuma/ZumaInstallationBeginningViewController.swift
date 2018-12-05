@@ -55,14 +55,14 @@ class ZumaInstallationBeginningViewController: UIViewController {
     
     @objc func guideNormalTap(_ sender: UIGestureRecognizer){
         //print("Normal tap")
-        self.performSegue(withIdentifier:"InstallationGuideSegue", sender: sender)
+        self.performSegue(withIdentifier:"Installation Guide Segue", sender: sender)
     }
     
     @objc func guideLongTap(_ sender: UIGestureRecognizer){
         
         if sender.state == .ended {
             //print("LongTap Ended")
-            self.performSegue(withIdentifier:"InstallationGuideSegue", sender: sender)
+            self.performSegue(withIdentifier:"Installation Guide Segue", sender: sender)
         }
         //else if sender.state == .began {
         //print("LongTap Started")

@@ -163,6 +163,8 @@
 		D0C09ED9217FA4DC00393BEE /* btn_write@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C09E63217FA4DC00393BEE /* btn_write@2x.png */; };
 		D0C09EDA217FA4DC00393BEE /* badge_plus_dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C09E64217FA4DC00393BEE /* badge_plus_dark@2x.png */; };
 		D0E0A5DE21B7434300237D27 /* ZumaInstallationFirstInstallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0A5DD21B7434300237D27 /* ZumaInstallationFirstInstallViewController.swift */; };
+		D0E0A5E021B7532C00237D27 /* Alexa.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E0A5DF21B7532A00237D27 /* Alexa.png */; };
+		D0E0A5E221B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0A5E121B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -346,6 +348,8 @@
 		D0C09E63217FA4DC00393BEE /* btn_write@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_write@2x.png"; sourceTree = "<group>"; };
 		D0C09E64217FA4DC00393BEE /* badge_plus_dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge_plus_dark@2x.png"; sourceTree = "<group>"; };
 		D0E0A5DD21B7434300237D27 /* ZumaInstallationFirstInstallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationFirstInstallViewController.swift; sourceTree = "<group>"; };
+		D0E0A5DF21B7532A00237D27 /* Alexa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alexa.png; sourceTree = "<group>"; };
+		D0E0A5E121B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationGetAlexaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,6 +411,7 @@
 		D0C09DC0217F9C7A00393BEE /* Zuma */ = {
 			isa = PBXGroup;
 			children = (
+				D0C09DC5217F9C7A00393BEE /* Main.storyboard */,
 				D0C09DC1217F9C7A00393BEE /* AppDelegate.swift */,
 				D08847CF21837B11003D4E75 /* DashboardPageViewController.swift */,
 				D08847D32183D8AD003D4E75 /* DashboardSoundViewController.swift */,
@@ -416,8 +421,8 @@
 				D0C09DC3217F9C7A00393BEE /* DashboardRoomsViewController.swift */,
 				D0BE3FC0217FB9B7004FDB45 /* RoomDetailViewController.swift */,
 				D0BE3FBE217FB6EB004FDB45 /* RoomActionViewController.swift */,
-				D0C09DC5217F9C7A00393BEE /* Main.storyboard */,
 				D0373EA0218FB7A2004A5EEA /* ZumaInstallationBeginningViewController.swift */,
+				D0E0A5E121B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift */,
 				D0E0A5DD21B7434300237D27 /* ZumaInstallationFirstInstallViewController.swift */,
 				D0BE3FC2217FE023004FDB45 /* ZumaSearchViewController.swift */,
 				D0BE3FC4217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift */,
@@ -460,6 +465,7 @@
 			children = (
 				D06C13052191F37000816E87 /* Assets.xcassets */,
 				D0176ED021B72CC2001BDC88 /* Arrow.png */,
+				D0E0A5DF21B7532A00237D27 /* Alexa.png */,
 				D06C12F72190E57400816E87 /* Nest1.png */,
 				D06C12F82190E57500816E87 /* Nest2.png */,
 				D0373EA42190B9F5004A5EEA /* networkSelectionImage.png */,
@@ -754,6 +760,7 @@
 				D0C09EC8217FA4DC00393BEE /* SortDescending.png in Resources */,
 				D0C09ECB217FA4DC00393BEE /* badge_orange_check@2x.png in Resources */,
 				D0C09EAC217FA4DC00393BEE /* btn_chat.png in Resources */,
+				D0E0A5E021B7532C00237D27 /* Alexa.png in Resources */,
 				D0C09EA6217FA4DC00393BEE /* ball_green.png in Resources */,
 				D0373E97218D14C7004A5EEA /* Spotify sign in.png in Resources */,
 				D0C09E87217FA4DC00393BEE /* badge_green_check@2x.png in Resources */,
@@ -860,6 +867,7 @@
 			files = (
 				D0BE3FC1217FB9B7004FDB45 /* RoomDetailViewController.swift in Sources */,
 				D0373EA1218FB7A3004A5EEA /* ZumaInstallationBeginningViewController.swift in Sources */,
+				D0E0A5E221B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift in Sources */,
 				D0373E91218CE732004A5EEA /* ZumaServiceLauncherViewController.swift in Sources */,
 				D08847CC2183700F003D4E75 /* ZumaInstallationComplete.swift in Sources */,
 				D0BE3FC3217FE023004FDB45 /* ZumaSearchViewController.swift in Sources */,

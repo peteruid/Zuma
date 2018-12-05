@@ -860,8 +860,8 @@ hello?</string>
                         <viewLayoutGuide key="safeArea" id="laz-Rq-ANf"/>
                     </view>
                     <connections>
-                        <segue destination="ogn-xW-ukD" kind="show" identifier="InstallationGuideSegue" id="gbA-gJ-MbW"/>
                         <segue destination="K6M-Et-H8c" kind="show" identifier="SetupZumasSegue" id="cMK-Lt-6Xz"/>
+                        <segue destination="BXU-ud-d3F" kind="show" identifier="Installation Guide Segue" id="m4E-4j-RFt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukx-V7-bRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1849,6 +1849,123 @@ hello?</string>
             </objects>
             <point key="canvasLocation" x="6359" y="1166"/>
         </scene>
+        <!--Zuma Installation Get Alexa View Controller-->
+        <scene sceneID="yvu-9b-QwN">
+            <objects>
+                <viewController id="BXU-ud-d3F" customClass="ZumaInstallationGetAlexaViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vS-4k-g3F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-lu-O2K">
+                                <rect key="frame" x="35" y="89" width="255" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">First
+things
+first.</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="52"/>
+                                <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To ensure a smooth setup," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7G-2P-tUt">
+                                <rect key="frame" x="34" y="298" width="306" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAt-a1-rhu">
+                                <rect key="frame" x="35" y="433" width="228" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Download the Amazon Alexa
+App,</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" red="0.65098039220000004" green="0.57254901960000004" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="you need to have a couple of things ready." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0d-g1-DTH">
+                                <rect key="frame" x="35" y="327" width="301" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NE6-b9-M8j" userLabel="Install Button Pad">
+                                <rect key="frame" x="138" y="671" width="221" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Io-Q9-FjK">
+                                        <rect key="frame" x="12" y="2" width="167" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Got them, lets go">
+                                            <color key="titleColor" red="0.65098039220000004" green="0.57254901960000004" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frX-vl-JXc">
+                                        <rect key="frame" x="187" y="13" width="16" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <state key="normal" backgroundImage="Arrow.png">
+                                            <color key="titleColor" red="0.65098039220000004" green="0.57254901960000004" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="layoutMargins" top="20" left="8" bottom="8" right="8"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_____________________________________________" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7E-ol-AJH">
+                                <rect key="frame" x="35" y="399" width="306" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="          if you haven't already." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHk-hJ-kIV">
+                                <rect key="frame" x="35" y="454" width="228" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etE-F5-o3P">
+                                <rect key="frame" x="35" y="565" width="306" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Launch the Alexa App and make sure you are signed into Alexa.  In the Alexa App, select MENU, then SKILLS and search for ZUMA.   Add the Zuma skill to your Alexa.   When you're done, come back here.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="____________________________________________" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pK9-NL-gIO">
+                                <rect key="frame" x="35" y="498" width="306" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Give Alexa the Zuma Skill." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMS-Ww-pS8">
+                                <rect key="frame" x="35" y="540" width="228" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" red="0.65098039220000004" green="0.57254901960000004" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Alexa.png" translatesAutoresizingMaskIntoConstraints="NO" id="lUO-Dz-e5Y">
+                                <rect key="frame" x="274" y="433" width="67" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="yMh-Xf-NjY"/>
+                    </view>
+                    <connections>
+                        <segue destination="ogn-xW-ukD" kind="show" identifier="FirstInstallBeginSegue" id="ojU-z3-Lzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxz-OB-P08" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597.5999999999999" y="118.96551724137932"/>
+        </scene>
         <!--Physical Installation Guide-->
         <scene sceneID="ToM-yb-fHA">
             <objects>
@@ -1924,7 +2041,7 @@ Zuma's.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eG4-YF-683" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3061.5999999999999" y="119.70443349753695"/>
+            <point key="canvasLocation" x="3358" y="119"/>
         </scene>
         <!--Test the Installation-->
         <scene sceneID="3ll-xl-6DO">
@@ -1984,7 +2101,7 @@ Please ensure the power is turned on for every room, and the lightswitch is set 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIF-5k-Kzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3782" y="120"/>
+            <point key="canvasLocation" x="4151" y="119"/>
         </scene>
         <!--Installation Troubleshooting-->
         <scene sceneID="AU5-T7-VQT">
@@ -2018,7 +2135,7 @@ Etc.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHW-rj-9zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4438" y="120"/>
+            <point key="canvasLocation" x="4918" y="119"/>
         </scene>
         <!--Choose a Network-->
         <scene sceneID="BMY-0T-G7L">
@@ -2193,6 +2310,7 @@ This first time, we will need to get your network credentials to attach this Zum
         </scene>
     </scenes>
     <resources>
+        <image name="Alexa.png" width="410" height="410"/>
         <image name="Amazon sign in.png" width="275" height="313"/>
         <image name="Arrow.png" width="87" height="87"/>
         <image name="Nest1.png" width="377" height="516"/>
