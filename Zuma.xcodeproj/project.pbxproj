@@ -14,7 +14,6 @@
 		D0373E99218D6503004A5EEA /* SettingsFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */; };
 		D0373EA1218FB7A3004A5EEA /* ZumaInstallationBeginningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373EA0218FB7A2004A5EEA /* ZumaInstallationBeginningViewController.swift */; };
 		D0373EA3218FBB30004A5EEA /* SettingsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0373EA2218FBB30004A5EEA /* SettingsMenuViewController.swift */; };
-		D0373EA52190B9F5004A5EEA /* networkSelectionImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0373EA42190B9F5004A5EEA /* networkSelectionImage.png */; };
 		D06C12F92190E57600816E87 /* Nest1.png in Resources */ = {isa = PBXBuildFile; fileRef = D06C12F72190E57400816E87 /* Nest1.png */; };
 		D06C12FA2190E57600816E87 /* Nest2.png in Resources */ = {isa = PBXBuildFile; fileRef = D06C12F82190E57500816E87 /* Nest2.png */; };
 		D06C12FC2190F03400816E87 /* SettingsPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C12FB2190F03400816E87 /* SettingsPeopleViewController.swift */; };
@@ -166,6 +165,7 @@
 		D0E0A5E021B7532C00237D27 /* Alexa.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E0A5DF21B7532A00237D27 /* Alexa.png */; };
 		D0E0A5E221B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0A5E121B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift */; };
 		D0E0A5E421B760E900237D27 /* ZumaInstallationTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0A5E321B760E900237D27 /* ZumaInstallationTestViewController.swift */; };
+		D0E0A5E621B7933C00237D27 /* NetworkSelectionImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E0A5E521B7933B00237D27 /* NetworkSelectionImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,7 +193,6 @@
 		D0373E98218D6503004A5EEA /* SettingsFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFeaturesViewController.swift; sourceTree = "<group>"; };
 		D0373EA0218FB7A2004A5EEA /* ZumaInstallationBeginningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationBeginningViewController.swift; sourceTree = "<group>"; };
 		D0373EA2218FBB30004A5EEA /* SettingsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenuViewController.swift; sourceTree = "<group>"; };
-		D0373EA42190B9F5004A5EEA /* networkSelectionImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = networkSelectionImage.png; sourceTree = "<group>"; };
 		D06C12F72190E57400816E87 /* Nest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nest1.png; sourceTree = "<group>"; };
 		D06C12F82190E57500816E87 /* Nest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nest2.png; sourceTree = "<group>"; };
 		D06C12FB2190F03400816E87 /* SettingsPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPeopleViewController.swift; sourceTree = "<group>"; };
@@ -352,6 +351,7 @@
 		D0E0A5DF21B7532A00237D27 /* Alexa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alexa.png; sourceTree = "<group>"; };
 		D0E0A5E121B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationGetAlexaViewController.swift; sourceTree = "<group>"; };
 		D0E0A5E321B760E900237D27 /* ZumaInstallationTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationTestViewController.swift; sourceTree = "<group>"; };
+		D0E0A5E521B7933B00237D27 /* NetworkSelectionImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NetworkSelectionImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,9 +471,9 @@
 				D0E0A5DF21B7532A00237D27 /* Alexa.png */,
 				D06C12F72190E57400816E87 /* Nest1.png */,
 				D06C12F82190E57500816E87 /* Nest2.png */,
-				D0373EA42190B9F5004A5EEA /* networkSelectionImage.png */,
 				D0373E94218CF270004A5EEA /* Amazon sign in.png */,
 				D0373E96218D14C6004A5EEA /* Spotify sign in.png */,
+				D0E0A5E521B7933B00237D27 /* NetworkSelectionImage.png */,
 				D08847D92183DA8F003D4E75 /* dashboardLights.png */,
 				D08847DB2183DA90003D4E75 /* dashboardSecurity.png */,
 				D08847DA2183DA8F003D4E75 /* dashboardSound.png */,
@@ -743,11 +743,11 @@
 				D0C09EAF217FA4DC00393BEE /* Right.png in Resources */,
 				D0C09ED6217FA4DC00393BEE /* btn_fire.png in Resources */,
 				D0C09E9F217FA4DC00393BEE /* dot_grey_ring.png in Resources */,
-				D0373EA52190B9F5004A5EEA /* networkSelectionImage.png in Resources */,
 				D0C09ECC217FA4DC00393BEE /* preferences_advanced.png in Resources */,
 				D0C09ECF217FA4DC00393BEE /* swoosh.wav in Resources */,
 				D0C09E71217FA4DC00393BEE /* ChatBubbleLeftDark.png in Resources */,
 				D0C09EDA217FA4DC00393BEE /* badge_plus_dark@2x.png in Resources */,
+				D0E0A5E621B7933C00237D27 /* NetworkSelectionImage.png in Resources */,
 				D0C09E88217FA4DC00393BEE /* readyAlarm.wav in Resources */,
 				D0C09E66217FA4DC00393BEE /* check-green@2x.png in Resources */,
 				D0C09E77217FA4DC00393BEE /* Middle.png in Resources */,

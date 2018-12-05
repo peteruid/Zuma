@@ -18,6 +18,7 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
     
     
     @IBOutlet weak var directionsLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +28,12 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         
         if (isMaster) {
             self.title = "Name this Space"
-            directionsLabel.text = "This is a Master Zuma.   Please choose a new space name from the list below and this Zuma will create that space in your Zuma Home."
+            titleLabel.text = "I name\nthis\nroom..."
+            directionsLabel.text = "                                      so let's give this new Zuma area a name.  Choose from the list, or make your own:"
         } else {
             self.title = "Choose a Space"
-            directionsLabel.text = "Please choose an existing space in your home for this satellite Zuma from the list below."
+            titleLabel.text = "Where\nare\nyou?"
+            directionsLabel.text = "                                      so please choose an existing space in your home for this satellite Zuma from the list below."
         }
     }
     
