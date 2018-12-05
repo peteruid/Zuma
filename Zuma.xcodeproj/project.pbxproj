@@ -165,6 +165,7 @@
 		D0E0A5DE21B7434300237D27 /* ZumaInstallationFirstInstallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0A5DD21B7434300237D27 /* ZumaInstallationFirstInstallViewController.swift */; };
 		D0E0A5E021B7532C00237D27 /* Alexa.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E0A5DF21B7532A00237D27 /* Alexa.png */; };
 		D0E0A5E221B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0A5E121B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift */; };
+		D0E0A5E421B760E900237D27 /* ZumaInstallationTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0A5E321B760E900237D27 /* ZumaInstallationTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -350,6 +351,7 @@
 		D0E0A5DD21B7434300237D27 /* ZumaInstallationFirstInstallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationFirstInstallViewController.swift; sourceTree = "<group>"; };
 		D0E0A5DF21B7532A00237D27 /* Alexa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alexa.png; sourceTree = "<group>"; };
 		D0E0A5E121B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationGetAlexaViewController.swift; sourceTree = "<group>"; };
+		D0E0A5E321B760E900237D27 /* ZumaInstallationTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZumaInstallationTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +426,7 @@
 				D0373EA0218FB7A2004A5EEA /* ZumaInstallationBeginningViewController.swift */,
 				D0E0A5E121B753D100237D27 /* ZumaInstallationGetAlexaViewController.swift */,
 				D0E0A5DD21B7434300237D27 /* ZumaInstallationFirstInstallViewController.swift */,
+				D0E0A5E321B760E900237D27 /* ZumaInstallationTestViewController.swift */,
 				D0BE3FC2217FE023004FDB45 /* ZumaSearchViewController.swift */,
 				D0BE3FC4217FE2C6004FDB45 /* ZumaSearchFoundViewController.swift */,
 				D0373E90218CE732004A5EEA /* ZumaServiceLauncherViewController.swift */,
@@ -874,6 +877,7 @@
 				D08847C821803E71003D4E75 /* NetworkPasswordViewController.swift in Sources */,
 				D0BE3FBF217FB6EB004FDB45 /* RoomActionViewController.swift in Sources */,
 				D0E0A5DE21B7434300237D27 /* ZumaInstallationFirstInstallViewController.swift in Sources */,
+				D0E0A5E421B760E900237D27 /* ZumaInstallationTestViewController.swift in Sources */,
 				D0373E99218D6503004A5EEA /* SettingsFeaturesViewController.swift in Sources */,
 				D0C09DC4217F9C7A00393BEE /* DashboardRoomsViewController.swift in Sources */,
 				D08847D62183D8D4003D4E75 /* DashboardLightsViewController.swift in Sources */,

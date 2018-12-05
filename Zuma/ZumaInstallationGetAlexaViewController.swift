@@ -35,14 +35,14 @@ class ZumaInstallationGetAlexaViewController: UIViewController {
     
     @objc func buttonNormalTap(_ sender: UIGestureRecognizer){
         //print("Normal tap")
-        self.performSegue(withIdentifier:"FirstInstallBeginSegue", sender: sender)
+        self.performSegue(withIdentifier:"FirstSetupAlexaGottenSegue", sender: sender)
     }
     
     @objc func buttonLongTap(_ sender: UIGestureRecognizer){
         
         if sender.state == .ended {
             //print("LongTap Ended")
-            self.performSegue(withIdentifier:"FirstInstallBeginSegue", sender: sender)
+            self.performSegue(withIdentifier:"FirstSetupAlexaGottenSegue", sender: sender)
         }
         //else if sender.state == .began {
         //print("LongTap Started")
