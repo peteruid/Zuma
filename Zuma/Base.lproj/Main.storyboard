@@ -662,6 +662,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W5A-8v-fOP">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.65098039220000004" green="0.57254901960000004" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -760,10 +761,10 @@
             </objects>
             <point key="canvasLocation" x="214" y="-1663"/>
         </scene>
-        <!--No Zuma's Found-->
+        <!--Zuma Installation Beginning View Controller-->
         <scene sceneID="JcC-iH-tkG">
             <objects>
-                <viewController title="No Zuma's Found" id="obg-CH-p9d" customClass="ZumaInstallationBeginningViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="obg-CH-p9d" customClass="ZumaInstallationBeginningViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fXi-V4-ddk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -868,10 +869,10 @@ hello?</string>
             </objects>
             <point key="canvasLocation" x="1815.2" y="118.96551724137932"/>
         </scene>
-        <!--Select a Zuma to configure-->
+        <!--Zuma Search Found View Controller-->
         <scene sceneID="SZB-x7-xda">
             <objects>
-                <viewController title="Select a Zuma to configure" id="K6M-Et-H8c" customClass="ZumaSearchFoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K6M-Et-H8c" customClass="ZumaSearchFoundViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rYC-tY-Q2I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -984,14 +985,6 @@ hello?</string>
                                     <action selector="onZumaButtonClicked:" destination="K6M-Et-H8c" eventType="touchUpInside" id="jvQ-1L-q7q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-83-z2J">
-                                <rect key="frame" x="147" y="633" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Found It! -&gt;"/>
-                                <connections>
-                                    <segue destination="qAc-Sm-JbX" kind="presentation" id="Ycw-ip-XEc"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hmm..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfM-A7-WMH">
                                 <rect key="frame" x="35" y="89" width="255" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1014,11 +1007,18 @@ hello?</string>
                                 <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-83-z2J">
+                                <rect key="frame" x="147" y="666" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Found It! -&gt;"/>
+                                <connections>
+                                    <segue destination="qAc-Sm-JbX" kind="presentation" id="Ycw-ip-XEc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gII-Do-t52"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="satellite1" destination="nlV-En-jYX" id="thW-nY-1d0"/>
                         <outlet property="satellite2" destination="G0t-A6-cbS" id="jTQ-16-gPI"/>
@@ -1030,12 +1030,12 @@ hello?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cm-i9-zM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2532" y="1572.4137931034484"/>
+            <point key="canvasLocation" x="1490" y="1587"/>
         </scene>
-        <!--Services-->
+        <!--Zuma Service Launcher View Controller-->
         <scene sceneID="1ZD-Gg-L2l">
             <objects>
-                <viewController title="Services" id="cjd-oz-mkw" customClass="ZumaServiceLauncherViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cjd-oz-mkw" customClass="ZumaServiceLauncherViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9HI-5g-iJT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1076,14 +1076,17 @@ hello?</string>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badge_green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="wGr-5q-rhC">
                                 <rect key="frame" x="58" y="537" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.65098039220000004" green="0.57254901960000004" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badge_green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZSX-QV-Kag">
                                 <rect key="frame" x="135" y="576" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.65098039220000004" green="0.57254901960000004" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badge_green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="WOz-lY-Eql">
                                 <rect key="frame" x="71" y="619" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.65098039220000004" green="0.57254901960000004" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50D-6I-RdR">
                                 <rect key="frame" x="33" y="78" width="255" height="187"/>
@@ -1125,7 +1128,6 @@ friends</string>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="skx-gG-pHd"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="alexaDoneCheckImage" destination="wGr-5q-rhC" id="WD6-Mt-WgB"/>
                         <outlet property="homekitDoneCheckImage" destination="WOz-lY-Eql" id="3ED-I4-wOB"/>
@@ -1168,7 +1170,6 @@ friends</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vHw-xj-5pv"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jih-Xh-woA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1228,7 +1229,6 @@ friends</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NuX-ry-ndl"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7PL-AH-SuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1267,17 +1267,16 @@ friends</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AMr-9Y-edZ"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3e2-py-p2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Hlh-dV-41j" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5095" y="-1204"/>
         </scene>
-        <!--Setup Alexa Voice Assistant-->
+        <!--View Controller-->
         <scene sceneID="74V-rw-Gb9">
             <objects>
-                <viewController title="Setup Alexa Voice Assistant" id="a7D-9a-cou" sceneMemberID="viewController">
+                <viewController id="a7D-9a-cou" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ynl-fy-hcX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1351,19 +1350,18 @@ Alexa.</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cII-Hf-Ucq"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJU-Vm-M9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3781.5999999999999" y="-2509.3596059113302"/>
         </scene>
-        <!--Log into Amazon-->
+        <!--View Controller-->
         <scene sceneID="Z0B-wx-UgT">
             <objects>
-                <viewController title="Log into Amazon" id="D6k-9w-5gZ" sceneMemberID="viewController">
+                <viewController id="D6k-9w-5gZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRP-sf-hmm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1384,16 +1382,15 @@ Alexa.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MLd-vi-3Eh"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxR-mP-Vel" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4437.6000000000004" y="-2509.3596059113302"/>
         </scene>
-        <!--Link Zuma and Alexa-->
+        <!--View Controller-->
         <scene sceneID="BId-dn-8hM">
             <objects>
-                <viewController title="Link Zuma and Alexa" id="ocm-kt-rwx" sceneMemberID="viewController">
+                <viewController id="ocm-kt-rwx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LYV-FB-tLL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1458,20 +1455,26 @@ business.</string>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="h8f-1a-lII"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdn-ST-zHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5093.6000000000004" y="-2510.0985221674878"/>
         </scene>
-        <!--Alexa Setup Complete-->
+        <!--View Controller-->
         <scene sceneID="7kG-Dt-GHJ">
             <objects>
-                <viewController title="Alexa Setup Complete" id="2q3-EN-a3i" sceneMemberID="viewController">
+                <viewController id="2q3-EN-a3i" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r3D-oZ-fmE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can do anything with Zuma that you can normally do with Alexa.    " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cr5-mx-w2u">
+                                <rect key="frame" x="13" y="345" width="344" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additionally, Alexa will be able to control Zuma lights.   You can say things like:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip6-x1-aQZ">
                                 <rect key="frame" x="13" y="415" width="344" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1508,14 +1511,6 @@ business.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvt-ao-mAn">
-                                <rect key="frame" x="175" y="730" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="OK"/>
-                                <connections>
-                                    <segue destination="mBR-Q9-7pp" kind="unwind" unwindAction="unwindOnServiceSetupCompleteWithSegue:" id="25W-rp-2U0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OO7-Mt-EV7">
                                 <rect key="frame" x="35" y="78" width="255" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1527,18 +1522,21 @@ linked.</string>
                                 <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can do anything with Zuma that you can normally do with Alexa.    " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cr5-mx-w2u">
-                                <rect key="frame" x="13" y="345" width="344" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvt-ao-mAn">
+                                <rect key="frame" x="275" y="724" width="82" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="Done -&gt;">
+                                    <color key="titleColor" red="0.65098039220000004" green="0.57254901960000004" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mBR-Q9-7pp" kind="unwind" unwindAction="unwindOnServiceSetupCompleteWithSegue:" id="25W-rp-2U0"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5oX-5K-LVc"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9K-Pc-39x" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="mBR-Q9-7pp" userLabel="Exit" sceneMemberID="exit"/>
@@ -1580,7 +1578,6 @@ linked.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jnA-jj-aSS"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKl-ZI-KU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1610,7 +1607,6 @@ linked.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VQz-8b-KvO"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xs-xB-qR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1649,7 +1645,6 @@ linked.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KUC-90-eO9"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZE-qZ-AN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="z5k-mq-IPS" userLabel="Exit" sceneMemberID="exit"/>
@@ -1661,11 +1656,11 @@ linked.</string>
             <objects>
                 <viewController title="Setup Nest" id="Cdy-pf-kqz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Deh-3S-T22">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kk-XL-Rmf">
-                                <rect key="frame" x="155" y="412" width="65" height="30"/>
+                                <rect key="frame" x="155" y="500" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Link Nest"/>
                                 <connections>
@@ -1691,7 +1686,6 @@ linked.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="v89-Jy-ykk"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Iv-OM-ut4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1702,7 +1696,7 @@ linked.</string>
             <objects>
                 <viewController title="Works With Nest" id="Ot3-4M-o2a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uaa-qa-dfC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wP-rO-Tb9">
@@ -1721,7 +1715,6 @@ linked.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qeq-oG-6aw"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZx-yz-9IG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1735,18 +1728,18 @@ linked.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nest2.png" translatesAutoresizingMaskIntoConstraints="NO" id="h8v-dI-kxR">
+                                <rect key="frame" x="8" y="145" width="359" height="482"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sQ-mV-6Yz">
-                                <rect key="frame" x="171" y="748" width="32" height="30"/>
+                                <rect key="frame" x="171" y="635" width="32" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="y1Z-Jf-8op" kind="show" id="vmL-OO-qwa"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nest2.png" translatesAutoresizingMaskIntoConstraints="NO" id="h8v-dI-kxR">
-                                <rect key="frame" x="8" y="98" width="359" height="482"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bM1-fw-yjq"/>
@@ -1754,18 +1747,18 @@ linked.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xD-kj-yte" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5077" y="-552"/>
+            <point key="canvasLocation" x="5076" y="-552.70935960591135"/>
         </scene>
         <!--Nest Setup Complete-->
         <scene sceneID="Cow-U1-faR">
             <objects>
                 <viewController title="Nest Setup Complete" id="y1Z-Jf-8op" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wqJ-Y4-m9l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYi-QK-BdD">
-                                <rect key="frame" x="172" y="660" width="30" height="30"/>
+                                <rect key="frame" x="172" y="748" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
@@ -1773,7 +1766,7 @@ linked.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-fo-4He">
-                                <rect key="frame" x="16" y="20" width="344" height="84"/>
+                                <rect key="frame" x="15" y="106" width="344" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Great!   Zuma and Nest are now connected.   Watch this video to learn how to control control the temperature of your home through Zuma.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1781,7 +1774,7 @@ linked.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxI-bm-ncx">
-                                <rect key="frame" x="17" y="112" width="343" height="30"/>
+                                <rect key="frame" x="16" y="198" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="https://www.youtube.com/watch?v=1J2f4DBMvSE"/>
                             </button>
@@ -1789,17 +1782,16 @@ linked.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jky-l7-CxJ"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sao-2Q-sq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ljF-a6-qNI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5734" y="-553"/>
         </scene>
-        <!--Installation Complete-->
+        <!--Zuma Installation Complete-->
         <scene sceneID="vKU-Av-ms9">
             <objects>
-                <viewController title="Installation Complete" id="qAc-Sm-JbX" customClass="ZumaInstallationComplete" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qAc-Sm-JbX" customClass="ZumaInstallationComplete" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yBT-gD-Oh6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1840,10 +1832,6 @@ room!</string>
                                 <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check-green.png" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-bF-PRQ">
-                                <rect key="frame" x="129" y="536" width="117" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="YHR-RE-i85"/>
@@ -1969,17 +1957,17 @@ App,</string>
                         <viewLayoutGuide key="safeArea" id="yMh-Xf-NjY"/>
                     </view>
                     <connections>
-                        <segue destination="K6M-Et-H8c" kind="show" identifier="FirstSetupAlexaGottenSegue" id="bDG-k5-38R"/>
+                        <segue destination="7mT-3B-bqi" kind="show" identifier="FirstSetupAlexaGottenSegue" id="eLk-QF-q01"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxz-OB-P08" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2532" y="829.80295566502468"/>
+            <point key="canvasLocation" x="2524" y="865"/>
         </scene>
-        <!--Physical Installation Guide-->
+        <!--Zuma Installation First Install View Controller-->
         <scene sceneID="ToM-yb-fHA">
             <objects>
-                <viewController title="Physical Installation Guide" id="ogn-xW-ukD" customClass="ZumaInstallationFirstInstallViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ogn-xW-ukD" customClass="ZumaInstallationFirstInstallViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FDE-Hw-r9O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2044,7 +2032,6 @@ Zuma's.</string>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ThH-B7-cu6"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <segue destination="Rr5-69-e9c" kind="show" identifier="FirstInstallDoneSegue" id="Ynw-Oa-P24"/>
                     </connections>
@@ -2053,10 +2040,10 @@ Zuma's.</string>
             </objects>
             <point key="canvasLocation" x="3358" y="119"/>
         </scene>
-        <!--Test the Installation-->
+        <!--Zuma Installation Test View Controller-->
         <scene sceneID="3ll-xl-6DO">
             <objects>
-                <viewController title="Test the Installation" id="Rr5-69-e9c" customClass="ZumaInstallationTestViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rr5-69-e9c" customClass="ZumaInstallationTestViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c8L-iS-ReD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
@@ -2154,7 +2141,6 @@ installed,</string>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="LoI-9x-p6B"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <segue destination="A10-tw-9eZ" kind="show" identifier="InstallationTroubleshootingSegue" id="6vT-2p-X17"/>
                         <segue destination="BXU-ud-d3F" kind="show" identifier="InstallSuccessSegue" id="O60-43-UAF"/>
@@ -2192,16 +2178,15 @@ Etc.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Sns-3N-qth"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHW-rj-9zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4918" y="119"/>
         </scene>
-        <!--Choose a Network-->
+        <!--Network Selection View Controller-->
         <scene sceneID="BMY-0T-G7L">
             <objects>
-                <viewController title="Choose a Network" id="7mT-3B-bqi" customClass="NetworkSelectionViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7mT-3B-bqi" customClass="NetworkSelectionViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mQd-4f-lc1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2257,10 +2242,10 @@ great!</string>
             </objects>
             <point key="canvasLocation" x="4200.8000000000002" y="1112.807881773399"/>
         </scene>
-        <!--Network Password-->
+        <!--Network Password View Controller-->
         <scene sceneID="ALq-rf-I9D">
             <objects>
-                <viewController title="Network Password" id="jcR-wN-Mf8" customClass="NetworkPasswordViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jcR-wN-Mf8" customClass="NetworkPasswordViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ue-7Y-QJm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2332,10 +2317,10 @@ great!</string>
             </objects>
             <point key="canvasLocation" x="4949.6000000000004" y="1114.2857142857142"/>
         </scene>
-        <!--Name this Space-->
+        <!--Space Name Picker View Controller-->
         <scene sceneID="Ev7-fr-hA9">
             <objects>
-                <viewController title="Name this Space" id="GXa-jX-bMg" customClass="SpaceNamePickerViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GXa-jX-bMg" customClass="SpaceNamePickerViewController" customModule="Zuma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ru-3Y-Yr8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2369,6 +2354,7 @@ great!</string>
                                 </state>
                                 <connections>
                                     <action selector="onNetworkPasswordSubmit:" destination="GXa-jX-bMg" eventType="touchUpInside" id="NXI-Ms-hyP"/>
+                                    <segue destination="qAc-Sm-JbX" kind="show" id="Ytg-MF-sai"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS1-yb-Awy">
@@ -2454,7 +2440,6 @@ room...</string>
         <image name="badge_green_check.png" width="25" height="25"/>
         <image name="badge_plus.png" width="29" height="29"/>
         <image name="bubble.png" width="32" height="25"/>
-        <image name="check-green.png" width="21" height="19"/>
         <image name="dashboard.png" width="687" height="1269"/>
         <image name="dashboardLights.png" width="689" height="1294"/>
         <image name="dashboardSecurity.png" width="691" height="1307"/>
@@ -2462,11 +2447,12 @@ room...</string>
         <image name="settings.png" width="21" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Y3e-ao-Je9"/>
-        <segue reference="V3J-dq-ZCL"/>
+        <segue reference="uQx-Lo-CXr"/>
+        <segue reference="TD0-jg-X2s"/>
+        <segue reference="O60-43-UAF"/>
+        <segue reference="Ycw-ip-XEc"/>
         <segue reference="7Z0-eT-0TT"/>
         <segue reference="dPJ-O5-Q9A"/>
         <segue reference="bk0-am-rfb"/>
-        <segue reference="bDG-k5-38R"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,9 +12,9 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
     
 
     var isMaster:Bool = false
-    let sections = ["Existing", "New"]
+    let sections = ["Existing", "Room Name"]
     let existing = ["Master Bedroom", "Living Room", "Cora's Room", "John's Room", "Garage", "Kitchen", "Bathroom"]
-    let suggestions = ["Patio", "Den", "Bat Cave", "Bathroom", "Den", "Study"]
+    let suggestions = ["Dining Room", "Patio", "Den", "Bat Cave", "Bathroom", "Den", "Study"]
     
     
     @IBOutlet weak var directionsLabel: UILabel!
@@ -27,11 +27,11 @@ class SpaceNamePickerViewController: UIViewController, UITableViewDataSource {
         isMaster = sharedAppDelegate().currentZumaBeingSetUpIsMaster
         
         if (isMaster) {
-            self.title = "Name this Space"
+            //self.title = "Name this Space"
             titleLabel.text = "I name\nthis\nroom..."
             directionsLabel.text = "                                      so let's give this new Zuma area a name.  Choose from the list, or make your own:"
         } else {
-            self.title = "Choose a Space"
+            //self.title = "Choose a Space"
             titleLabel.text = "Where\nare\nyou?"
             directionsLabel.text = "                                      so please choose an existing space in your home for this satellite Zuma from the list below."
         }

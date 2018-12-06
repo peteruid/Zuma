@@ -15,7 +15,7 @@ class ZumaInstallationComplete: UIViewController {
 
         // Do any additional setup after loading the view.
         if ( sharedAppDelegate().firstLaunch == true) {
-            doneButton.setTitle( "Now let's configure some services", for: .normal)
+            doneButton.setTitle( "Let's configure some services", for: .normal)
         }
     }
     
